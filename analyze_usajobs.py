@@ -642,7 +642,10 @@ def render_analysis_html(
         f"<p class='site-subtitle'>{total:,} USAJOBS postings (2018–2026) classified "
         f"against OPM qualification standards. 2026 is partial (through ~April). "
         f"Click <strong>View OPM Text</strong> on any series to read the source and verify. "
-        f"Generated {_time.strftime('%Y-%m-%d', _time.gmtime())}.</p>"
+        f"Generated {_time.strftime('%Y-%m-%d', _time.gmtime())}. "
+        f"By <a href='https://abigailhaddad.netlify.app/'>Abigail Haddad</a> "
+        f"(<a href='https://github.com/abigailhaddad'>GitHub</a> · "
+        f"<a href='https://presentofcoding.substack.com'>Blog</a>).</p>"
     )
 
     # Stat cards
