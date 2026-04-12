@@ -727,10 +727,22 @@ def render_analysis_html(
     )
     p.append("</div></div>")
 
+    # Reusable filter bar HTML
+    def _filter_bar(table_id: str) -> str:
+        return (
+            f"<div class='filter-row'>"
+            f"<label>Filter by category:</label>"
+            f"<select class='cat-filter' data-table='{table_id}'>"
+            f"<option value=''>All</option></select>"
+            f"<button class='clear-btn' data-table='{table_id}'>Clear</button>"
+            f"</div>"
+        )
+
     # --- TAB 2: By Series & Year ---
     p.append("<div class='tab-panel' id='tab-by-series-year'>")
     p.append("<p style='font-size:0.85rem;color:var(--color-text-muted)'>"
-             "Posting counts per series per year. Search or sort to find specific series.</p>")
+             "Posting counts per series per year. Filter by category or search.</p>")
+    p.append(_filter_bar("series-year-table"))
     p.append("<table id='series-year-table' class='display compact' style='width:100%'>")
     p.append("<thead><tr><th>Category</th><th>Series</th><th>Title</th><th>Total</th>")
     for y in yrs:
@@ -743,6 +755,7 @@ def render_analysis_html(
     p.append("<p style='font-size:0.85rem;color:var(--color-text-muted)'>"
              "Every occupational series with its education classification. "
              "Click <strong>View OPM Text</strong> to read the actual requirement and verify.</p>")
+    p.append(_filter_bar("crosswalk"))
     p.append("<table id='crosswalk' class='display compact' style='width:100%'>")
     p.append("<thead><tr><th>Category</th><th>Series</th><th>Title</th>"
              "<th>Postings</th><th>OPM Text</th><th>Source</th></tr></thead>"
@@ -793,6 +806,46 @@ def render_analysis_html(
     }});
   }});
 
+  // ---- Shared: category filter logic ----
+  const tables = {{}};
+  const activeFilters = {{}};
+
+  function setupCatFilter(tableId, data) {{
+    const counts = {{}};
+    data.forEach(r => {{ counts[r.category] = (counts[r.category]||0)+1; }});
+    const order = ['mandatory_professional','mandatory_qualification','optional','none'];
+    const sel = document.querySelector(`.cat-filter[data-table="${{tableId}}"]`);
+    if (!sel) return;
+    order.forEach(cat => {{
+      if (!counts[cat]) return;
+      const opt = document.createElement('option');
+      opt.value = cat;
+      opt.textContent = (catLabels[cat]||cat) + ' (' + counts[cat] + ')';
+      sel.appendChild(opt);
+    }});
+    activeFilters[tableId] = '';
+    sel.addEventListener('change', function() {{
+      activeFilters[tableId] = this.value;
+      tables[tableId].draw();
+    }});
+    const clearBtn = document.querySelector(`.clear-btn[data-table="${{tableId}}"]`);
+    if (clearBtn) clearBtn.addEventListener('click', function() {{
+      sel.value = '';
+      activeFilters[tableId] = '';
+      tables[tableId].search('').draw();
+    }});
+  }}
+
+  // Custom search: filter by category column (raw data, not rendered HTML)
+  $.fn.dataTable.ext.search.push(function(settings, searchData, idx) {{
+    const tid = settings.nTable.id;
+    if (!activeFilters[tid]) return true;
+    const tbl = tables[tid];
+    if (!tbl) return true;
+    const rowData = tbl.row(idx).data();
+    return rowData && rowData.category === activeFilters[tid];
+  }});
+
   // ---- Tab 2: Series × Year ----
   const syData = JSON.parse(document.getElementById('sy-data').textContent);
   const syCols = [
@@ -802,14 +855,15 @@ def render_analysis_html(
     {{ data:'total', render:numFmt }}
   ];
   yrCols.forEach(y => syCols.push({{ data:y, render:numFmt }}));
-  $('#series-year-table').DataTable({{
+  tables['series-year-table'] = $('#series-year-table').DataTable({{
     data: syData, pageLength: 25, order:[[3,'desc']], columns: syCols
   }});
+  setupCatFilter('series-year-table', syData);
 
   // ---- Tab 3: Crosswalk ----
   const cwData = JSON.parse(document.getElementById('cw-data').textContent);
   const DOD_NOTE_SERIES = ['1102','0081'];
-  $('#crosswalk').DataTable({{
+  tables['crosswalk'] = $('#crosswalk').DataTable({{
     data: cwData, pageLength: 25, order:[[3,'desc']],
     columns: [
       {{ data:'category', render:d=>badgeHtml(d), className:'cat-cell' }},
@@ -822,6 +876,7 @@ def render_analysis_html(
         render:d => d ? '<a href="'+esc(d)+'" target="_blank">Source</a>' : '' }}
     ]
   }});
+  setupCatFilter('crosswalk', cwData);
 
   // ---- Modal ----
   const overlay = document.getElementById('modalOverlay');
