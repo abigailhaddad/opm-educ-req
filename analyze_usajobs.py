@@ -676,7 +676,7 @@ def render_analysis_html(
     p.append("<p style='font-size:0.85rem;color:var(--color-text-muted)'>Primary series classification. 2026 is partial.</p>")
     p.append("<table class='data-table'><thead><tr><th>Year</th><th>Total</th>")
     for cat in FOUR_CATS:
-        p.append(f"<th>{CAT_LABELS[cat]}</th>")
+        p.append(f"<th><span class='cat-badge cat-{cat}'>{CAT_LABELS[cat]}</span></th>")
     p.append("</tr></thead><tbody>")
     for row in payload["by_year_primary"]:
         y = row["year"]; t = row["total"]
