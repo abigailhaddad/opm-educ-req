@@ -1,0 +1,4864 @@
+{
+  "gs": [
+    {
+      "series_num": "0006",
+      "title": "Correctional Institution Administration Series"
+    },
+    {
+      "series_num": "0007",
+      "title": "Correctional Officer Series"
+    },
+    {
+      "series_num": "0011",
+      "title": "Bond Sales Promotion Series"
+    },
+    {
+      "series_num": "0018",
+      "title": "Safety and Occupational Health Management Series"
+    },
+    {
+      "series_num": "0019",
+      "title": "Safety Technician Series"
+    },
+    {
+      "series_num": "0020",
+      "title": "Community Planning Series"
+    },
+    {
+      "series_num": "0021",
+      "title": "Community Planning Technician Series"
+    },
+    {
+      "series_num": "0023",
+      "title": "Outdoor Recreation Planning Series"
+    },
+    {
+      "series_num": "0025",
+      "title": "Park Ranger Series"
+    },
+    {
+      "series_num": "0028",
+      "title": "Environmental Protection Specialist Series"
+    },
+    {
+      "series_num": "0029",
+      "title": "Environmental Protection Assistant Series"
+    },
+    {
+      "series_num": "0030",
+      "title": "Sports Specialist Series"
+    },
+    {
+      "series_num": "0050",
+      "title": "Funeral Directing Series"
+    },
+    {
+      "series_num": "0060",
+      "title": "Chaplain Series"
+    },
+    {
+      "series_num": "0062",
+      "title": "Clothing Design Series"
+    },
+    {
+      "series_num": "0072",
+      "title": "Fingerprint Identification Series"
+    },
+    {
+      "series_num": "0080",
+      "title": "Security Administration Series"
+    },
+    {
+      "series_num": "0081",
+      "title": "Fire Protection and Prevention Series"
+    },
+    {
+      "series_num": "0082",
+      "title": "United States Marshal Series"
+    },
+    {
+      "series_num": "0083",
+      "title": "Police Series"
+    },
+    {
+      "series_num": "0084",
+      "title": "Nuclear Materials Courier Series"
+    },
+    {
+      "series_num": "0085",
+      "title": "Security Guard Series"
+    },
+    {
+      "series_num": "0086",
+      "title": "Security Clerical and Assistance Series"
+    },
+    {
+      "series_num": "0089",
+      "title": "Emergency Management Series"
+    },
+    {
+      "series_num": "0090",
+      "title": "Guide Series"
+    },
+    {
+      "series_num": "0095",
+      "title": "Foreign Law Specialist Series"
+    },
+    {
+      "series_num": "0099",
+      "title": "General Student Trainee Series"
+    },
+    {
+      "series_num": "0101",
+      "title": "Social Science Series"
+    },
+    {
+      "series_num": "0102",
+      "title": "Social Science Aid and Technician Series"
+    },
+    {
+      "series_num": "0105",
+      "title": "Social Insurance Administration Series"
+    },
+    {
+      "series_num": "0106",
+      "title": "Unemployment Insurance Series"
+    },
+    {
+      "series_num": "0107",
+      "title": "Health Insurance Administration Series"
+    },
+    {
+      "series_num": "0110",
+      "title": "Economist Series"
+    },
+    {
+      "series_num": "0119",
+      "title": "Economics Assistant Series"
+    },
+    {
+      "series_num": "0130",
+      "title": "Foreign Affairs Series"
+    },
+    {
+      "series_num": "0131",
+      "title": "International Relations Series"
+    },
+    {
+      "series_num": "0132",
+      "title": "Intelligence Series"
+    },
+    {
+      "series_num": "0134",
+      "title": "Intelligence Aid and Clerk Series"
+    },
+    {
+      "series_num": "0135",
+      "title": "Foreign Agricultural Affairs Series"
+    },
+    {
+      "series_num": "0136",
+      "title": "International Cooperation Series"
+    },
+    {
+      "series_num": "0140",
+      "title": "Workforce Research and Analysis Series"
+    },
+    {
+      "series_num": "0142",
+      "title": "Workforce Development Series"
+    },
+    {
+      "series_num": "0150",
+      "title": "Geography Series"
+    },
+    {
+      "series_num": "0160",
+      "title": "Civil Rights Analysis Series"
+    },
+    {
+      "series_num": "0170",
+      "title": "History Series"
+    },
+    {
+      "series_num": "0180",
+      "title": "Psychology Series"
+    },
+    {
+      "series_num": "0181",
+      "title": "Psychology Aid and Technician Series"
+    },
+    {
+      "series_num": "0184",
+      "title": "Sociology Series"
+    },
+    {
+      "series_num": "0185",
+      "title": "Social Work Series"
+    },
+    {
+      "series_num": "0186",
+      "title": "Social Services Aid and Assistant Series"
+    },
+    {
+      "series_num": "0187",
+      "title": "Social Services Series"
+    },
+    {
+      "series_num": "0188",
+      "title": "Recreation Specialist Series"
+    },
+    {
+      "series_num": "0189",
+      "title": "Recreation Aid and Assistant Series"
+    },
+    {
+      "series_num": "0190",
+      "title": "General Anthropology Series"
+    },
+    {
+      "series_num": "0193",
+      "title": "Archeology Series"
+    },
+    {
+      "series_num": "0199",
+      "title": "Social Science Student Trainee Series"
+    },
+    {
+      "series_num": "0201",
+      "title": "Human Resources Management Series"
+    },
+    {
+      "series_num": "0203",
+      "title": "Human Resources Assistance Series"
+    },
+    {
+      "series_num": "0241",
+      "title": "Mediation Series"
+    },
+    {
+      "series_num": "0243",
+      "title": "Apprenticeship and Training Series"
+    },
+    {
+      "series_num": "0244",
+      "title": "Labor Management Relations Examining Series"
+    },
+    {
+      "series_num": "0260",
+      "title": "Equal Employment Opportunity Series"
+    },
+    {
+      "series_num": "0299",
+      "title": "Human Resources Management Student Trainee Series"
+    },
+    {
+      "series_num": "0301",
+      "title": "Miscellaneous Administration and Program Series"
+    },
+    {
+      "series_num": "0302",
+      "title": "Messenger Series"
+    },
+    {
+      "series_num": "0303",
+      "title": "Miscellaneous Clerk and Assistant Series"
+    },
+    {
+      "series_num": "0304",
+      "title": "Information Receptionist Series"
+    },
+    {
+      "series_num": "0305",
+      "title": "Mail and File Series"
+    },
+    {
+      "series_num": "0306",
+      "title": "Government Information Series"
+    },
+    {
+      "series_num": "0308",
+      "title": "Records and Information Management Series"
+    },
+    {
+      "series_num": "0309",
+      "title": "Correspondence Clerk Series"
+    },
+    {
+      "series_num": "0313",
+      "title": "Work Unit Supervising Series"
+    },
+    {
+      "series_num": "0318",
+      "title": "Secretary Series"
+    },
+    {
+      "series_num": "0319",
+      "title": "Closed Microphone Reporting Series"
+    },
+    {
+      "series_num": "0322",
+      "title": "Clerk-Typist Series"
+    },
+    {
+      "series_num": "0326",
+      "title": "Office Automation Clerical and Assistance Series"
+    },
+    {
+      "series_num": "0332",
+      "title": "Computer Operation Series"
+    },
+    {
+      "series_num": "0335",
+      "title": "Computer Clerk and Assistant Series"
+    },
+    {
+      "series_num": "0340",
+      "title": "Program Management Series"
+    },
+    {
+      "series_num": "0341",
+      "title": "Administrative Officer Series"
+    },
+    {
+      "series_num": "0342",
+      "title": "Support Services Administration Series"
+    },
+    {
+      "series_num": "0343",
+      "title": "Management and Program Analysis Series"
+    },
+    {
+      "series_num": "0344",
+      "title": "Management and Program Clerical and Assistance Series"
+    },
+    {
+      "series_num": "0346",
+      "title": "Logistics Management Series"
+    },
+    {
+      "series_num": "0350",
+      "title": "Equipment Operator Series"
+    },
+    {
+      "series_num": "0356",
+      "title": "Data Transcriber Series"
+    },
+    {
+      "series_num": "0360",
+      "title": "Equal Opportunity Compliance Series"
+    },
+    {
+      "series_num": "0361",
+      "title": "Equal Opportunity Assistance Series"
+    },
+    {
+      "series_num": "0382",
+      "title": "Telephone Operating Series"
+    },
+    {
+      "series_num": "0390",
+      "title": "Telecommunications Processing Series"
+    },
+    {
+      "series_num": "0391",
+      "title": "Telecommunications Series"
+    },
+    {
+      "series_num": "0392",
+      "title": "General Telecommunications Series"
+    },
+    {
+      "series_num": "0394",
+      "title": "Communications Clerical Series"
+    },
+    {
+      "series_num": "0399",
+      "title": "Administration and Office Support Student Trainee Series"
+    },
+    {
+      "series_num": "0401",
+      "title": "General Natural Resources Management and Biological Sciences Series"
+    },
+    {
+      "series_num": "0403",
+      "title": "Microbiology Series"
+    },
+    {
+      "series_num": "0404",
+      "title": "Biological Science Technician Series"
+    },
+    {
+      "series_num": "0405",
+      "title": "Pharmacology Series"
+    },
+    {
+      "series_num": "0408",
+      "title": "Ecology Series"
+    },
+    {
+      "series_num": "0410",
+      "title": "Zoology Series"
+    },
+    {
+      "series_num": "0413",
+      "title": "Physiology Series"
+    },
+    {
+      "series_num": "0414",
+      "title": "Entomology Series"
+    },
+    {
+      "series_num": "0415",
+      "title": "Toxicology Series"
+    },
+    {
+      "series_num": "0421",
+      "title": "Plant Protection Technician Series"
+    },
+    {
+      "series_num": "0430",
+      "title": "Botany Series"
+    },
+    {
+      "series_num": "0434",
+      "title": "Plant Pathology Series"
+    },
+    {
+      "series_num": "0435",
+      "title": "Plant Physiology Series"
+    },
+    {
+      "series_num": "0437",
+      "title": "Horticulture Series"
+    },
+    {
+      "series_num": "0440",
+      "title": "Genetics Series"
+    },
+    {
+      "series_num": "0454",
+      "title": "Rangeland Management Series"
+    },
+    {
+      "series_num": "0455",
+      "title": "Range Technician Series"
+    },
+    {
+      "series_num": "0457",
+      "title": "Soil Conservation Series"
+    },
+    {
+      "series_num": "0458",
+      "title": "Soil Conservation Technician Series"
+    },
+    {
+      "series_num": "0459",
+      "title": "Irrigation System Operation Series"
+    },
+    {
+      "series_num": "0460",
+      "title": "Forestry Series"
+    },
+    {
+      "series_num": "0462",
+      "title": "Forestry Technician Series"
+    },
+    {
+      "series_num": "0470",
+      "title": "Soil Science Series"
+    },
+    {
+      "series_num": "0471",
+      "title": "Agronomy Series"
+    },
+    {
+      "series_num": "0480",
+      "title": "Fish and Wildlife Administration Series"
+    },
+    {
+      "series_num": "0482",
+      "title": "Fish Biology Series"
+    },
+    {
+      "series_num": "0485",
+      "title": "Wildlife Refuge Management Series"
+    },
+    {
+      "series_num": "0486",
+      "title": "Wildlife Biology Series"
+    },
+    {
+      "series_num": "0487",
+      "title": "Animal Science Series"
+    },
+    {
+      "series_num": "0499",
+      "title": "Biological Science Student Trainee Series"
+    },
+    {
+      "series_num": "0501",
+      "title": "Financial Administration and Program Series"
+    },
+    {
+      "series_num": "0503",
+      "title": "Financial Clerical and Technician Series"
+    },
+    {
+      "series_num": "0505",
+      "title": "Financial Management Series"
+    },
+    {
+      "series_num": "0510",
+      "title": "Accounting Series"
+    },
+    {
+      "series_num": "0511",
+      "title": "Auditing Series"
+    },
+    {
+      "series_num": "0512",
+      "title": "Internal Revenue Agent Series"
+    },
+    {
+      "series_num": "0525",
+      "title": "Accounting Technician Series"
+    },
+    {
+      "series_num": "0526",
+      "title": "Tax Specialist Series"
+    },
+    {
+      "series_num": "0530",
+      "title": "Cash Processing Series"
+    },
+    {
+      "series_num": "0540",
+      "title": "Voucher Examining Series"
+    },
+    {
+      "series_num": "0544",
+      "title": "Civilian Pay Series"
+    },
+    {
+      "series_num": "0545",
+      "title": "Military Pay Series"
+    },
+    {
+      "series_num": "0560",
+      "title": "Budget Analysis Series"
+    },
+    {
+      "series_num": "0561",
+      "title": "Budget Clerical and Assistance Series"
+    },
+    {
+      "series_num": "0592",
+      "title": "Tax Examining Series"
+    },
+    {
+      "series_num": "0599",
+      "title": "Financial Management Student Trainee Series"
+    },
+    {
+      "series_num": "0601",
+      "title": "General Medical and Healthcare Series"
+    },
+    {
+      "series_num": "0602",
+      "title": "Physician Series"
+    },
+    {
+      "series_num": "0603",
+      "title": "Physician Assistant Series"
+    },
+    {
+      "series_num": "0610",
+      "title": "Nursing Series"
+    },
+    {
+      "series_num": "0620",
+      "title": "Practical Nurse Series"
+    },
+    {
+      "series_num": "0621",
+      "title": "Nursing Assistant Series"
+    },
+    {
+      "series_num": "0622",
+      "title": "Medical Supply Aide and Technician Series"
+    },
+    {
+      "series_num": "0630",
+      "title": "Dietetics and Nutrition Series"
+    },
+    {
+      "series_num": "0631",
+      "title": "Occupational Therapy Series"
+    },
+    {
+      "series_num": "0633",
+      "title": "Physical Therapy Series"
+    },
+    {
+      "series_num": "0635",
+      "title": "Kinesiotherapy Series"
+    },
+    {
+      "series_num": "0636",
+      "title": "Rehabilitation Therapy Assistant Series"
+    },
+    {
+      "series_num": "0638",
+      "title": "Recreation/Creative Arts Therapy Series"
+    },
+    {
+      "series_num": "0640",
+      "title": "Health Aid and Technician Series"
+    },
+    {
+      "series_num": "0642",
+      "title": "Nuclear Medicine Technician Series"
+    },
+    {
+      "series_num": "0644",
+      "title": "Clinical Laboratory Science Series"
+    },
+    {
+      "series_num": "0645",
+      "title": "Medical Technician Series"
+    },
+    {
+      "series_num": "0646",
+      "title": "Pathology Technician Series"
+    },
+    {
+      "series_num": "0647",
+      "title": "Diagnostic Radiologic Technologist Series"
+    },
+    {
+      "series_num": "0648",
+      "title": "Therapeutic Radiologic Technologist Series"
+    },
+    {
+      "series_num": "0649",
+      "title": "Medical Instrument Technician Series"
+    },
+    {
+      "series_num": "0651",
+      "title": "Respiratory Therapist Series"
+    },
+    {
+      "series_num": "0660",
+      "title": "Pharmacy Series"
+    },
+    {
+      "series_num": "0661",
+      "title": "Pharmacy Technician Series"
+    },
+    {
+      "series_num": "0662",
+      "title": "Optometry Series"
+    },
+    {
+      "series_num": "0665",
+      "title": "Speech/Language Pathology and Audiology Series Series"
+    },
+    {
+      "series_num": "0667",
+      "title": "Orthotist and Prosthetist Series"
+    },
+    {
+      "series_num": "0668",
+      "title": "Podiatry Series"
+    },
+    {
+      "series_num": "0669",
+      "title": "Medical Records Administration Series"
+    },
+    {
+      "series_num": "0670",
+      "title": "Health System Administration Series"
+    },
+    {
+      "series_num": "0671",
+      "title": "Health System Specialist Series"
+    },
+    {
+      "series_num": "0672",
+      "title": "Prosthetic Representative Series"
+    },
+    {
+      "series_num": "0673",
+      "title": "Hospital Housekeeping Management Series"
+    },
+    {
+      "series_num": "0675",
+      "title": "Medical Records Technician Series"
+    },
+    {
+      "series_num": "0679",
+      "title": "Medical Support Assistance Series"
+    },
+    {
+      "series_num": "0680",
+      "title": "Dentistry Series"
+    },
+    {
+      "series_num": "0681",
+      "title": "Dental Assistant Series"
+    },
+    {
+      "series_num": "0682",
+      "title": "Dental Hygiene Series"
+    },
+    {
+      "series_num": "0683",
+      "title": "Dental Laboratory Aid and Technician Series"
+    },
+    {
+      "series_num": "0685",
+      "title": "Public Health Program Specialist Series"
+    },
+    {
+      "series_num": "0688",
+      "title": "Sanitarian Series"
+    },
+    {
+      "series_num": "0690",
+      "title": "Industrial Hygiene Series"
+    },
+    {
+      "series_num": "0696",
+      "title": "Consumer Safety Series"
+    },
+    {
+      "series_num": "0698",
+      "title": "Environmental Health Technician Series"
+    },
+    {
+      "series_num": "0699",
+      "title": "Medical and Health Student Trainee Series"
+    },
+    {
+      "series_num": "0701",
+      "title": "Veterinary Medical Science Series"
+    },
+    {
+      "series_num": "0704",
+      "title": "Animal Health Technician Series"
+    },
+    {
+      "series_num": "0799",
+      "title": "Veterinary Student Trainee Series"
+    },
+    {
+      "series_num": "0801",
+      "title": "General Engineering Series"
+    },
+    {
+      "series_num": "0802",
+      "title": "Engineering Technical Series"
+    },
+    {
+      "series_num": "0803",
+      "title": "Safety Engineering Series"
+    },
+    {
+      "series_num": "0804",
+      "title": "Fire Protection Engineering Series"
+    },
+    {
+      "series_num": "0806",
+      "title": "Materials Engineering Series"
+    },
+    {
+      "series_num": "0807",
+      "title": "Landscape Architecture Series"
+    },
+    {
+      "series_num": "0808",
+      "title": "Architecture Series"
+    },
+    {
+      "series_num": "0809",
+      "title": "Construction Control Technical Series"
+    },
+    {
+      "series_num": "0810",
+      "title": "Civil Engineering Series"
+    },
+    {
+      "series_num": "0817",
+      "title": "Survey Technical Series"
+    },
+    {
+      "series_num": "0819",
+      "title": "Environmental Engineering Series"
+    },
+    {
+      "series_num": "0828",
+      "title": "Construction Analyst Series"
+    },
+    {
+      "series_num": "0830",
+      "title": "Mechanical Engineering Series"
+    },
+    {
+      "series_num": "0840",
+      "title": "Nuclear Engineering Series"
+    },
+    {
+      "series_num": "0850",
+      "title": "Electrical Engineering Series"
+    },
+    {
+      "series_num": "0854",
+      "title": "Computer Engineering Series"
+    },
+    {
+      "series_num": "0855",
+      "title": "Electronics Engineering Series"
+    },
+    {
+      "series_num": "0856",
+      "title": "Electronics Technical Series"
+    },
+    {
+      "series_num": "0858",
+      "title": "Bioengineering and Biomedical Engineering Series"
+    },
+    {
+      "series_num": "0861",
+      "title": "Aerospace Engineering Series"
+    },
+    {
+      "series_num": "0871",
+      "title": "Naval Architecture Series"
+    },
+    {
+      "series_num": "0873",
+      "title": "Marine Survey Technical Series"
+    },
+    {
+      "series_num": "0880",
+      "title": "Mining Engineering Series"
+    },
+    {
+      "series_num": "0881",
+      "title": "Petroleum Engineering Series"
+    },
+    {
+      "series_num": "0890",
+      "title": "Agricultural Engineering Series"
+    },
+    {
+      "series_num": "0893",
+      "title": "Chemical Engineering Series"
+    },
+    {
+      "series_num": "0895",
+      "title": "Industrial Engineering Technical Series"
+    },
+    {
+      "series_num": "0896",
+      "title": "Industrial Engineering Series"
+    },
+    {
+      "series_num": "0899",
+      "title": "Engineering and Architecture Student Trainee Series"
+    },
+    {
+      "series_num": "0901",
+      "title": "General Legal and Kindred Administration Series"
+    },
+    {
+      "series_num": "0904",
+      "title": "Law Clerk Series"
+    },
+    {
+      "series_num": "0905",
+      "title": "General Attorney Series"
+    },
+    {
+      "series_num": "0930",
+      "title": "Hearings and Appeals Series"
+    },
+    {
+      "series_num": "0950",
+      "title": "Paralegal Specialist Series"
+    },
+    {
+      "series_num": "0958",
+      "title": "Employee Benefits Law Series"
+    },
+    {
+      "series_num": "0962",
+      "title": "Contact Representative Series"
+    },
+    {
+      "series_num": "0963",
+      "title": "Legal Instruments Examining Series"
+    },
+    {
+      "series_num": "0965",
+      "title": "Land Law Examining Series"
+    },
+    {
+      "series_num": "0967",
+      "title": "Passport and Visa Examining Series"
+    },
+    {
+      "series_num": "0986",
+      "title": "Legal Assistance Series"
+    },
+    {
+      "series_num": "0987",
+      "title": "Tax Law Specialist Series"
+    },
+    {
+      "series_num": "0991",
+      "title": "Workers' Compensation Claims Examining Series"
+    },
+    {
+      "series_num": "0993",
+      "title": "Railroad Retirement Claims Examining Series"
+    },
+    {
+      "series_num": "0996",
+      "title": "Veterans Claims Examining Series"
+    },
+    {
+      "series_num": "0998",
+      "title": "Claims Assistance and Examining Series"
+    },
+    {
+      "series_num": "0999",
+      "title": "Legal Occupations Student Trainee Series"
+    },
+    {
+      "series_num": "1001",
+      "title": "General Arts and Information Series"
+    },
+    {
+      "series_num": "1008",
+      "title": "Interior Design Series"
+    },
+    {
+      "series_num": "1010",
+      "title": "Exhibits Specialist Series"
+    },
+    {
+      "series_num": "1015",
+      "title": "Museum Curator Series"
+    },
+    {
+      "series_num": "1016",
+      "title": "Museum Specialist and Technician Series"
+    },
+    {
+      "series_num": "1020",
+      "title": "Illustrating Series"
+    },
+    {
+      "series_num": "1035",
+      "title": "Public Affairs Series"
+    },
+    {
+      "series_num": "1040",
+      "title": "Language Specialist Series"
+    },
+    {
+      "series_num": "1046",
+      "title": "Language Clerical Series"
+    },
+    {
+      "series_num": "1051",
+      "title": "Music Specialist Series"
+    },
+    {
+      "series_num": "1054",
+      "title": "Theater Specialist Series"
+    },
+    {
+      "series_num": "1056",
+      "title": "Art Specialist Series"
+    },
+    {
+      "series_num": "1060",
+      "title": "Photography Series"
+    },
+    {
+      "series_num": "1071",
+      "title": "Audiovisual Production Series"
+    },
+    {
+      "series_num": "1082",
+      "title": "Writing and Editing Series"
+    },
+    {
+      "series_num": "1083",
+      "title": "Technical Writing and Editing Series"
+    },
+    {
+      "series_num": "1084",
+      "title": "Visual Information Series"
+    },
+    {
+      "series_num": "1087",
+      "title": "Editorial Assistance Series"
+    },
+    {
+      "series_num": "1099",
+      "title": "Information and Arts Student Trainee Series"
+    },
+    {
+      "series_num": "1101",
+      "title": "General Business and Industry Series"
+    },
+    {
+      "series_num": "1102",
+      "title": "Contracting Series"
+    },
+    {
+      "series_num": "1103",
+      "title": "Industrial Property Management Series"
+    },
+    {
+      "series_num": "1104",
+      "title": "Property Disposal Series"
+    },
+    {
+      "series_num": "1105",
+      "title": "Purchasing Series"
+    },
+    {
+      "series_num": "1106",
+      "title": "Procurement Clerical and Technician Series"
+    },
+    {
+      "series_num": "1107",
+      "title": "Property Disposal Clerical and Technician Series"
+    },
+    {
+      "series_num": "1109",
+      "title": "Grants Management Series"
+    },
+    {
+      "series_num": "1130",
+      "title": "Public Utilities Specialist Series"
+    },
+    {
+      "series_num": "1140",
+      "title": "Trade Specialist Series"
+    },
+    {
+      "series_num": "1144",
+      "title": "Commissary Management Series"
+    },
+    {
+      "series_num": "1145",
+      "title": "Agricultural Program Specialist Series"
+    },
+    {
+      "series_num": "1146",
+      "title": "Agricultural Marketing Series"
+    },
+    {
+      "series_num": "1147",
+      "title": "Agricultural Market Reporting Series"
+    },
+    {
+      "series_num": "1150",
+      "title": "Industrial Specialist Series"
+    },
+    {
+      "series_num": "1152",
+      "title": "Production Control Series"
+    },
+    {
+      "series_num": "1160",
+      "title": "Financial Analysis Series"
+    },
+    {
+      "series_num": "1163",
+      "title": "Insurance Examining Series"
+    },
+    {
+      "series_num": "1165",
+      "title": "Loan Specialist Series"
+    },
+    {
+      "series_num": "1169",
+      "title": "Internal Revenue Officer Series"
+    },
+    {
+      "series_num": "1170",
+      "title": "Realty Series"
+    },
+    {
+      "series_num": "1171",
+      "title": "Appraising Series"
+    },
+    {
+      "series_num": "1173",
+      "title": "Housing Management Series"
+    },
+    {
+      "series_num": "1176",
+      "title": "Building Management Series"
+    },
+    {
+      "series_num": "1199",
+      "title": "Business and Industry Student Trainee Series"
+    },
+    {
+      "series_num": "1202",
+      "title": "Patent Technician Series"
+    },
+    {
+      "series_num": "1210",
+      "title": "Copyright Series"
+    },
+    {
+      "series_num": "1220",
+      "title": "Patent Administration Series"
+    },
+    {
+      "series_num": "1221",
+      "title": "Patent Adviser Series"
+    },
+    {
+      "series_num": "1222",
+      "title": "Patent Attorney Series"
+    },
+    {
+      "series_num": "1223",
+      "title": "Patent Classifying Series"
+    },
+    {
+      "series_num": "1224",
+      "title": "Patent Examining Series"
+    },
+    {
+      "series_num": "1226",
+      "title": "Design Patent Examining Series"
+    },
+    {
+      "series_num": "1299",
+      "title": "Copyright and Patent Student Trainee Series"
+    },
+    {
+      "series_num": "1301",
+      "title": "General Physical Science Series"
+    },
+    {
+      "series_num": "1306",
+      "title": "Health Physics Series"
+    },
+    {
+      "series_num": "1310",
+      "title": "Physics Series"
+    },
+    {
+      "series_num": "1311",
+      "title": "Physical Science Technician Series"
+    },
+    {
+      "series_num": "1313",
+      "title": "Geophysics Series"
+    },
+    {
+      "series_num": "1315",
+      "title": "Hydrology Series"
+    },
+    {
+      "series_num": "1316",
+      "title": "Hydrologic Technician Series"
+    },
+    {
+      "series_num": "1320",
+      "title": "Chemistry Series"
+    },
+    {
+      "series_num": "1321",
+      "title": "Metallurgy Series"
+    },
+    {
+      "series_num": "1330",
+      "title": "Astronomy and Space Science Series"
+    },
+    {
+      "series_num": "1340",
+      "title": "Meteorology Series"
+    },
+    {
+      "series_num": "1341",
+      "title": "Meteorological Technician Series"
+    },
+    {
+      "series_num": "1350",
+      "title": "Geology Series"
+    },
+    {
+      "series_num": "1360",
+      "title": "Oceanography Series"
+    },
+    {
+      "series_num": "1361",
+      "title": "Navigational Information Series"
+    },
+    {
+      "series_num": "1370",
+      "title": "Cartography Series"
+    },
+    {
+      "series_num": "1371",
+      "title": "Cartographic Technician Series"
+    },
+    {
+      "series_num": "1372",
+      "title": "Geodesy Series"
+    },
+    {
+      "series_num": "1373",
+      "title": "Land Surveying Series"
+    },
+    {
+      "series_num": "1374",
+      "title": "Geodetic Technician Series"
+    },
+    {
+      "series_num": "1380",
+      "title": "Forest Products Technology Series"
+    },
+    {
+      "series_num": "1382",
+      "title": "Food Technology Series"
+    },
+    {
+      "series_num": "1384",
+      "title": "Textile Technology Series"
+    },
+    {
+      "series_num": "1397",
+      "title": "Document Analysis Series"
+    },
+    {
+      "series_num": "1399",
+      "title": "Physical Science Student Trainee Series"
+    },
+    {
+      "series_num": "1410",
+      "title": "Librarian Series"
+    },
+    {
+      "series_num": "1411",
+      "title": "Library Technician Series"
+    },
+    {
+      "series_num": "1412",
+      "title": "Technical Information Services Series"
+    },
+    {
+      "series_num": "1420",
+      "title": "Archivist Series"
+    },
+    {
+      "series_num": "1421",
+      "title": "Archives Technician Series"
+    },
+    {
+      "series_num": "1499",
+      "title": "Library and Archives Student Trainee Series"
+    },
+    {
+      "series_num": "1510",
+      "title": "Actuarial Science Series"
+    },
+    {
+      "series_num": "1515",
+      "title": "Operations Research Series"
+    },
+    {
+      "series_num": "1520",
+      "title": "Mathematics Series"
+    },
+    {
+      "series_num": "1521",
+      "title": "Mathematics Technician Series"
+    },
+    {
+      "series_num": "1529",
+      "title": "Mathematical Statistics Series"
+    },
+    {
+      "series_num": "1530",
+      "title": "Statistics Series"
+    },
+    {
+      "series_num": "1531",
+      "title": "Statistical Assistant Series"
+    },
+    {
+      "series_num": "1541",
+      "title": "Cryptanalysis Series"
+    },
+    {
+      "series_num": "1550",
+      "title": "Computer Science Series"
+    },
+    {
+      "series_num": "1599",
+      "title": "Mathematics and Statistics Student Trainee Series"
+    },
+    {
+      "series_num": "1601",
+      "title": "Equipment, Facilities, and Services Series"
+    },
+    {
+      "series_num": "1603",
+      "title": "Equipment, Facilities, and Services Assistance Series"
+    },
+    {
+      "series_num": "1630",
+      "title": "Cemetery Administration Services Series"
+    },
+    {
+      "series_num": "1640",
+      "title": "Facility Operations Services Series"
+    },
+    {
+      "series_num": "1654",
+      "title": "Printing Services Series"
+    },
+    {
+      "series_num": "1658",
+      "title": "Laundry Operations Services Series"
+    },
+    {
+      "series_num": "1667",
+      "title": "Food Services Series"
+    },
+    {
+      "series_num": "1670",
+      "title": "Equipment Services Series"
+    },
+    {
+      "series_num": "1699",
+      "title": "Equipment, Facilities, and Services Student Trainee Series"
+    },
+    {
+      "series_num": "1701",
+      "title": "General Education and Training Series"
+    },
+    {
+      "series_num": "1702",
+      "title": "Education and Training Technician Series"
+    },
+    {
+      "series_num": "1710",
+      "title": "Education and Vocational Training Series"
+    },
+    {
+      "series_num": "1712",
+      "title": "Training Instruction Series"
+    },
+    {
+      "series_num": "1715",
+      "title": "Vocational Rehabilitation Series"
+    },
+    {
+      "series_num": "1720",
+      "title": "Education Program Series"
+    },
+    {
+      "series_num": "1725",
+      "title": "Public Health Educator Series"
+    },
+    {
+      "series_num": "1730",
+      "title": "Education Research Series"
+    },
+    {
+      "series_num": "1740",
+      "title": "Education Services Series"
+    },
+    {
+      "series_num": "1750",
+      "title": "Instructional Systems Series"
+    },
+    {
+      "series_num": "1799",
+      "title": "Education Student Trainee Series"
+    },
+    {
+      "series_num": "1801",
+      "title": "General Inspection, Investigation, Enforcement, and Compliance Series"
+    },
+    {
+      "series_num": "1802",
+      "title": "Compliance Inspection and Support Series"
+    },
+    {
+      "series_num": "1805",
+      "title": "Investigative Analysis"
+    },
+    {
+      "series_num": "1810",
+      "title": "General Investigation Series"
+    },
+    {
+      "series_num": "1811",
+      "title": "Criminal Investigation Series"
+    },
+    {
+      "series_num": "1815",
+      "title": "Air Safety Investigating Series"
+    },
+    {
+      "series_num": "1822",
+      "title": "Mine Safety and Health Inspection Series"
+    },
+    {
+      "series_num": "1825",
+      "title": "Aviation Safety Series"
+    },
+    {
+      "series_num": "1849",
+      "title": "Wage and Hour Investigation"
+    },
+    {
+      "series_num": "1850",
+      "title": "Agricultural Warehouse Inspection Series"
+    },
+    {
+      "series_num": "1860",
+      "title": "Equal Opportunity Investigation Series"
+    },
+    {
+      "series_num": "1862",
+      "title": "Consumer Safety Inspection Series"
+    },
+    {
+      "series_num": "1863",
+      "title": "Food Inspection Series"
+    },
+    {
+      "series_num": "1881",
+      "title": "Customs and Border Protection Interdiction Series"
+    },
+    {
+      "series_num": "1889",
+      "title": "Import Compliance Series"
+    },
+    {
+      "series_num": "1894",
+      "title": "Customs Entry and Liquidating Series"
+    },
+    {
+      "series_num": "1895",
+      "title": "Customs and Border Protection Series"
+    },
+    {
+      "series_num": "1896",
+      "title": "Border Patrol Enforcement Series"
+    },
+    {
+      "series_num": "1899",
+      "title": "Investigation Student Trainee Series"
+    },
+    {
+      "series_num": "1910",
+      "title": "Quality Assurance Series"
+    },
+    {
+      "series_num": "1980",
+      "title": "Agricultural Commodity Grading Series"
+    },
+    {
+      "series_num": "1981",
+      "title": "Agricultural Commodity Aid Series"
+    },
+    {
+      "series_num": "1999",
+      "title": "Quality Inspection Student Trainee Series"
+    },
+    {
+      "series_num": "2001",
+      "title": "General Supply Series"
+    },
+    {
+      "series_num": "2003",
+      "title": "Supply Program Management Series"
+    },
+    {
+      "series_num": "2005",
+      "title": "Supply Clerical and Technician Series"
+    },
+    {
+      "series_num": "2010",
+      "title": "Inventory Management Series"
+    },
+    {
+      "series_num": "2030",
+      "title": "Distribution Facilities and Storage Management Series"
+    },
+    {
+      "series_num": "2032",
+      "title": "Packaging Series"
+    },
+    {
+      "series_num": "2091",
+      "title": "Sales Store Clerical Series"
+    },
+    {
+      "series_num": "2099",
+      "title": "Supply Student Trainee Series"
+    },
+    {
+      "series_num": "2101",
+      "title": "Transportation Specialist Series"
+    },
+    {
+      "series_num": "2102",
+      "title": "Transportation Clerk and Assistant Series"
+    },
+    {
+      "series_num": "2110",
+      "title": "Transportation Industry Analysis Series"
+    },
+    {
+      "series_num": "2121",
+      "title": "Railroad Safety Series"
+    },
+    {
+      "series_num": "2123",
+      "title": "Motor Carrier Safety Series"
+    },
+    {
+      "series_num": "2125",
+      "title": "Highway Safety Series"
+    },
+    {
+      "series_num": "2130",
+      "title": "Traffic Management Series"
+    },
+    {
+      "series_num": "2131",
+      "title": "Freight Rate Series"
+    },
+    {
+      "series_num": "2144",
+      "title": "Cargo Scheduling Series"
+    },
+    {
+      "series_num": "2150",
+      "title": "Transportation Operations Series"
+    },
+    {
+      "series_num": "2151",
+      "title": "Dispatching Series"
+    },
+    {
+      "series_num": "2152",
+      "title": "Air Traffic Control Series"
+    },
+    {
+      "series_num": "2154",
+      "title": "Air Traffic Assistance Series"
+    },
+    {
+      "series_num": "2161",
+      "title": "Marine Cargo Series"
+    },
+    {
+      "series_num": "2181",
+      "title": "Aircraft Operation Series"
+    },
+    {
+      "series_num": "2183",
+      "title": "Air Navigation Series"
+    },
+    {
+      "series_num": "2185",
+      "title": "Aircrew Technician Series"
+    },
+    {
+      "series_num": "2199",
+      "title": "Transportation Student Trainee Series"
+    },
+    {
+      "series_num": "2210",
+      "title": "Information Technology Management Series"
+    },
+    {
+      "series_num": "2299",
+      "title": "Information Technology Student Trainee Series"
+    }
+  ],
+  "fws": [
+    {
+      "series_num": "2501",
+      "title": "General Wire Communications Equipment Installation and Maintenance"
+    },
+    {
+      "series_num": "2502",
+      "title": "Telecommunications Mechanic"
+    },
+    {
+      "series_num": "2504",
+      "title": "Wire Communications Cable Splicing"
+    },
+    {
+      "series_num": "2602",
+      "title": "Electronic Measurement Equipment Mechanic"
+    },
+    {
+      "series_num": "2604",
+      "title": "Electronics Mechanic"
+    },
+    {
+      "series_num": "2606",
+      "title": "Electronic Industrial Controls Mechanic"
+    },
+    {
+      "series_num": "2608",
+      "title": "Electronic Digital Computer Mechanic"
+    },
+    {
+      "series_num": "2610",
+      "title": "Electronic Integrated Systems Mechanic"
+    },
+    {
+      "series_num": "2801",
+      "title": "General Electrical Installation and Maintenance"
+    },
+    {
+      "series_num": "2805",
+      "title": "Electrician"
+    },
+    {
+      "series_num": "2810",
+      "title": "High Voltage Electrician"
+    },
+    {
+      "series_num": "2854",
+      "title": "Electrical Equipment Repairing"
+    },
+    {
+      "series_num": "2892",
+      "title": "Aircraft Electrician"
+    },
+    {
+      "series_num": "3101",
+      "title": "General Leather and Fabric Work"
+    },
+    {
+      "series_num": "3105",
+      "title": "Fabric Working"
+    },
+    {
+      "series_num": "3106",
+      "title": "Upholstering"
+    },
+    {
+      "series_num": "3111",
+      "title": "Sewing Machine Operating"
+    },
+    {
+      "series_num": "3301",
+      "title": "General Instrument Work"
+    },
+    {
+      "series_num": "3306",
+      "title": "Optical Instrument Repairing"
+    },
+    {
+      "series_num": "3314",
+      "title": "Instrument Making"
+    },
+    {
+      "series_num": "3359",
+      "title": "Instrument Mechanic"
+    },
+    {
+      "series_num": "3378",
+      "title": "Precision Measurement Equipment Calibrating"
+    },
+    {
+      "series_num": "3401",
+      "title": "General Machine Tool Work"
+    },
+    {
+      "series_num": "3414",
+      "title": "Machining"
+    },
+    {
+      "series_num": "3416",
+      "title": "Toolmaking"
+    },
+    {
+      "series_num": "3428",
+      "title": "Die Sinking"
+    },
+    {
+      "series_num": "3501",
+      "title": "General Service and Support Work"
+    },
+    {
+      "series_num": "3502",
+      "title": "Laboring"
+    },
+    {
+      "series_num": "3511",
+      "title": "Laboratory Working"
+    },
+    {
+      "series_num": "3513",
+      "title": "Coin/Currency Checking"
+    },
+    {
+      "series_num": "3515",
+      "title": "Laboratory Support Working"
+    },
+    {
+      "series_num": "3546",
+      "title": "Railroad Repairing"
+    },
+    {
+      "series_num": "3566",
+      "title": "Custodial Working"
+    },
+    {
+      "series_num": "3601",
+      "title": "General Structural and Finishing Work"
+    },
+    {
+      "series_num": "3602",
+      "title": "Cement Finishing"
+    },
+    {
+      "series_num": "3603",
+      "title": "Masonry"
+    },
+    {
+      "series_num": "3604",
+      "title": "Tile Setting"
+    },
+    {
+      "series_num": "3605",
+      "title": "Plastering"
+    },
+    {
+      "series_num": "3606",
+      "title": "Roofing"
+    },
+    {
+      "series_num": "3610",
+      "title": "Insulating"
+    },
+    {
+      "series_num": "3701",
+      "title": "General Metal Processing"
+    },
+    {
+      "series_num": "3703",
+      "title": "Welding"
+    },
+    {
+      "series_num": "3705",
+      "title": "Nondestructive Testing"
+    },
+    {
+      "series_num": "3707",
+      "title": "Metalizing"
+    },
+    {
+      "series_num": "3711",
+      "title": "Electroplating"
+    },
+    {
+      "series_num": "3712",
+      "title": "Heat Treating"
+    },
+    {
+      "series_num": "3725",
+      "title": "Battery Repairing"
+    },
+    {
+      "series_num": "3727",
+      "title": "Buffing and Polishing"
+    },
+    {
+      "series_num": "3769",
+      "title": "Shot Peening Machine Operating"
+    },
+    {
+      "series_num": "3801",
+      "title": "General Metal Working"
+    },
+    {
+      "series_num": "3802",
+      "title": "Metal Forging"
+    },
+    {
+      "series_num": "3806",
+      "title": "Sheet Metal Mechanic"
+    },
+    {
+      "series_num": "3808",
+      "title": "Boilermaking"
+    },
+    {
+      "series_num": "3809",
+      "title": "Mobile Equipment Metal Mechanic"
+    },
+    {
+      "series_num": "3820",
+      "title": "Shipfitting"
+    },
+    {
+      "series_num": "3869",
+      "title": "Metal Forming Machine Operating"
+    },
+    {
+      "series_num": "3901",
+      "title": "General Motion Picture, Radio, Television, and Sound Equipment Operation"
+    },
+    {
+      "series_num": "3910",
+      "title": "Motion Picture Projection"
+    },
+    {
+      "series_num": "3940",
+      "title": "Broadcasting Equipment Operating"
+    },
+    {
+      "series_num": "4001",
+      "title": "General Lens and Crystal Work"
+    },
+    {
+      "series_num": "4010",
+      "title": "Prescription Eyeglass Making"
+    },
+    {
+      "series_num": "4101",
+      "title": "General Painting and Paperhanging"
+    },
+    {
+      "series_num": "4102",
+      "title": "Painting"
+    },
+    {
+      "series_num": "4104",
+      "title": "Sign Painting"
+    },
+    {
+      "series_num": "4204",
+      "title": "Pipefitting"
+    },
+    {
+      "series_num": "4206",
+      "title": "Plumbing"
+    },
+    {
+      "series_num": "4255",
+      "title": "Fuel Distribution System Mechanic"
+    },
+    {
+      "series_num": "4301",
+      "title": "General Pliable Materials Work"
+    },
+    {
+      "series_num": "4352",
+      "title": "Plastic Fabricating"
+    },
+    {
+      "series_num": "4361",
+      "title": "Rubber Equipment Repairing"
+    },
+    {
+      "series_num": "4373",
+      "title": "Molding"
+    },
+    {
+      "series_num": "4401",
+      "title": "General Printing"
+    },
+    {
+      "series_num": "4402",
+      "title": "Bindery Working"
+    },
+    {
+      "series_num": "4403",
+      "title": "Hand Composing"
+    },
+    {
+      "series_num": "4406",
+      "title": "Letterpress Operating"
+    },
+    {
+      "series_num": "4416",
+      "title": "Offset Platemaking"
+    },
+    {
+      "series_num": "4417",
+      "title": "Offset Press Operating"
+    },
+    {
+      "series_num": "4441",
+      "title": "Bookbinding"
+    },
+    {
+      "series_num": "4449",
+      "title": "Electrolytic Intaglio Platemaking"
+    },
+    {
+      "series_num": "4454",
+      "title": "Intaglio Press Operating"
+    },
+    {
+      "series_num": "4601",
+      "title": "General Wood Work"
+    },
+    {
+      "series_num": "4602",
+      "title": "Blocking and Bracing"
+    },
+    {
+      "series_num": "4604",
+      "title": "Wood Working"
+    },
+    {
+      "series_num": "4605",
+      "title": "Wood Crafting"
+    },
+    {
+      "series_num": "4607",
+      "title": "Carpentry"
+    },
+    {
+      "series_num": "4616",
+      "title": "Patternmaking"
+    },
+    {
+      "series_num": "4701",
+      "title": "General Maintenance and Operations Work"
+    },
+    {
+      "series_num": "4714",
+      "title": "Model Making"
+    },
+    {
+      "series_num": "4715",
+      "title": "Exhibits Making/Modeling"
+    },
+    {
+      "series_num": "4717",
+      "title": "Boat Building and Repairing"
+    },
+    {
+      "series_num": "4737",
+      "title": "General Equipment Mechanic"
+    },
+    {
+      "series_num": "4741",
+      "title": "General Equipment Operating"
+    },
+    {
+      "series_num": "4742",
+      "title": "Utility Systems Repairing-Operating"
+    },
+    {
+      "series_num": "4745",
+      "title": "Research Laboratory Mechanic"
+    },
+    {
+      "series_num": "4749",
+      "title": "Maintenance Mechanic"
+    },
+    {
+      "series_num": "4754",
+      "title": "Cemetery Caretaking"
+    },
+    {
+      "series_num": "4801",
+      "title": "General Equipment Maintenance"
+    },
+    {
+      "series_num": "4804",
+      "title": "Locksmithing"
+    },
+    {
+      "series_num": "4805",
+      "title": "Medical Equipment Repairing"
+    },
+    {
+      "series_num": "4816",
+      "title": "Protective and Safety Equipment Fabricating and Repairing"
+    },
+    {
+      "series_num": "4818",
+      "title": "Aircraft Survival Flight Equipment Repairing"
+    },
+    {
+      "series_num": "4819",
+      "title": "Bowling Equipment Repairing"
+    },
+    {
+      "series_num": "4840",
+      "title": "Tool and Equipment Repairing"
+    },
+    {
+      "series_num": "4850",
+      "title": "Bearing Reconditioning"
+    },
+    {
+      "series_num": "4855",
+      "title": "Domestic Appliance Repairing"
+    },
+    {
+      "series_num": "5001",
+      "title": "General Plant and Animal Work"
+    },
+    {
+      "series_num": "5003",
+      "title": "Gardening"
+    },
+    {
+      "series_num": "5026",
+      "title": "Pest Controlling"
+    },
+    {
+      "series_num": "5031",
+      "title": "Insects Production Working"
+    },
+    {
+      "series_num": "5042",
+      "title": "Tree Trimming and Removing"
+    },
+    {
+      "series_num": "5048",
+      "title": "Animal Caretaking"
+    },
+    {
+      "series_num": "5201",
+      "title": "General Miscellaneous Occupations"
+    },
+    {
+      "series_num": "5205",
+      "title": "Gas and Radiation Detecting"
+    },
+    {
+      "series_num": "5210",
+      "title": "Rigging"
+    },
+    {
+      "series_num": "5220",
+      "title": "Shipwright"
+    },
+    {
+      "series_num": "5221",
+      "title": "Lofting"
+    },
+    {
+      "series_num": "5301",
+      "title": "General Industrial Equipment Maintenance"
+    },
+    {
+      "series_num": "5306",
+      "title": "Air Conditioning Equipment Mechanic"
+    },
+    {
+      "series_num": "5309",
+      "title": "Heating and Boiler Plant Equipment Mechanic"
+    },
+    {
+      "series_num": "5313",
+      "title": "Elevator Mechanic"
+    },
+    {
+      "series_num": "5317",
+      "title": "Laundry and Dry Cleaning Equipment Repairing"
+    },
+    {
+      "series_num": "5318",
+      "title": "Lock and Dam Repairing"
+    },
+    {
+      "series_num": "5323",
+      "title": "Oiling and Greasing"
+    },
+    {
+      "series_num": "5334",
+      "title": "Marine Machinery Mechanic"
+    },
+    {
+      "series_num": "5350",
+      "title": "Production Machinery Mechanic"
+    },
+    {
+      "series_num": "5352",
+      "title": "Industrial Equipment Mechanic"
+    },
+    {
+      "series_num": "5378",
+      "title": "Powered Support Systems Mechanic"
+    },
+    {
+      "series_num": "5401",
+      "title": "General Industrial Equipment Operation"
+    },
+    {
+      "series_num": "5402",
+      "title": "Boiler Plant Operating"
+    },
+    {
+      "series_num": "5406",
+      "title": "Utility Systems Operating"
+    },
+    {
+      "series_num": "5407",
+      "title": "Electric Power Controlling"
+    },
+    {
+      "series_num": "5408",
+      "title": "Wastewater Treatment Plant Operating"
+    },
+    {
+      "series_num": "5409",
+      "title": "Water Treatment Plant Operating"
+    },
+    {
+      "series_num": "5413",
+      "title": "Fuel Distribution System Operating"
+    },
+    {
+      "series_num": "5415",
+      "title": "Air Conditioning Equipment Operating"
+    },
+    {
+      "series_num": "5419",
+      "title": "Stationary-Engine Operating"
+    },
+    {
+      "series_num": "5423",
+      "title": "Sandblasting"
+    },
+    {
+      "series_num": "5426",
+      "title": "Lock and Dam Operating"
+    },
+    {
+      "series_num": "5438",
+      "title": "Elevator Operating"
+    },
+    {
+      "series_num": "5440",
+      "title": "Packaging Machine Operating"
+    },
+    {
+      "series_num": "5701",
+      "title": "General Transportation/Mobile Equipment Operation"
+    },
+    {
+      "series_num": "5703",
+      "title": "Motor Vehicle Operating"
+    },
+    {
+      "series_num": "5704",
+      "title": "Fork Lift Operating"
+    },
+    {
+      "series_num": "5705",
+      "title": "Tractor Operating"
+    },
+    {
+      "series_num": "5716",
+      "title": "Engineering Equipment Operating"
+    },
+    {
+      "series_num": "5725",
+      "title": "Crane Operating"
+    },
+    {
+      "series_num": "5729",
+      "title": "Drill Rig Operating"
+    },
+    {
+      "series_num": "5736",
+      "title": "Braking-Switching and Conducting"
+    },
+    {
+      "series_num": "5737",
+      "title": "Locomotive Engineering"
+    },
+    {
+      "series_num": "5738",
+      "title": "Railroad Maintenance Vehicle Operating"
+    },
+    {
+      "series_num": "5767",
+      "title": "Airfield Clearing Equipment Operating"
+    },
+    {
+      "series_num": "5782",
+      "title": "Ship Operating"
+    },
+    {
+      "series_num": "5784",
+      "title": "Riverboat Operating"
+    },
+    {
+      "series_num": "5786",
+      "title": "Small Craft Operating"
+    },
+    {
+      "series_num": "5788",
+      "title": "Deckhand"
+    },
+    {
+      "series_num": "5801",
+      "title": "General Transportation/Mobile Equipment Maintenance"
+    },
+    {
+      "series_num": "5803",
+      "title": "Heavy Mobile Equipment Mechanic"
+    },
+    {
+      "series_num": "5806",
+      "title": "Mobile Equipment Servicing"
+    },
+    {
+      "series_num": "5823",
+      "title": "Automotive Mechanic"
+    },
+    {
+      "series_num": "5876",
+      "title": "Electromotive Equipment Mechanic"
+    },
+    {
+      "series_num": "6501",
+      "title": "General Ammunition, Explosives, and Toxic Materials Work"
+    },
+    {
+      "series_num": "6502",
+      "title": "Explosives Operating"
+    },
+    {
+      "series_num": "6505",
+      "title": "Munitions Destroying"
+    },
+    {
+      "series_num": "6511",
+      "title": "Missile/Toxic Materials Handling"
+    },
+    {
+      "series_num": "6601",
+      "title": "General Armament Work"
+    },
+    {
+      "series_num": "6605",
+      "title": "Artillery Repairing"
+    },
+    {
+      "series_num": "6610",
+      "title": "Small Arms Repairing"
+    },
+    {
+      "series_num": "6641",
+      "title": "Ordnance Equipment Mechanic"
+    },
+    {
+      "series_num": "6652",
+      "title": "Aircraft Ordnance Systems Mechanic"
+    },
+    {
+      "series_num": "6656",
+      "title": "Special Weapons Systems Mechanic"
+    },
+    {
+      "series_num": "6901",
+      "title": "General Warehousing and Stock Handling"
+    },
+    {
+      "series_num": "6904",
+      "title": "Tools and Parts Attending"
+    },
+    {
+      "series_num": "6907",
+      "title": "Materials Handling"
+    },
+    {
+      "series_num": "6910",
+      "title": "Materials Expediting"
+    },
+    {
+      "series_num": "6912",
+      "title": "Materials Examining and Identifying"
+    },
+    {
+      "series_num": "6913",
+      "title": "Hazardous Waste Disposing"
+    },
+    {
+      "series_num": "6914",
+      "title": "Store Working"
+    },
+    {
+      "series_num": "6941",
+      "title": "Bulk Money Handling"
+    },
+    {
+      "series_num": "6968",
+      "title": "Aircraft Freight Loading"
+    },
+    {
+      "series_num": "7001",
+      "title": "General Packing and Processing"
+    },
+    {
+      "series_num": "7002",
+      "title": "Packing"
+    },
+    {
+      "series_num": "7006",
+      "title": "Preservation Servicing"
+    },
+    {
+      "series_num": "7009",
+      "title": "Equipment Cleaning"
+    },
+    {
+      "series_num": "7301",
+      "title": "General Laundry, Dry Cleaning, and Pressing"
+    },
+    {
+      "series_num": "7304",
+      "title": "Laundry Working"
+    },
+    {
+      "series_num": "7305",
+      "title": "Laundry Machine Operating"
+    },
+    {
+      "series_num": "7401",
+      "title": "General Food Preparation and Serving"
+    },
+    {
+      "series_num": "7402",
+      "title": "Baking"
+    },
+    {
+      "series_num": "7404",
+      "title": "Cooking"
+    },
+    {
+      "series_num": "7405",
+      "title": "Bartending"
+    },
+    {
+      "series_num": "7407",
+      "title": "Meatcutting"
+    },
+    {
+      "series_num": "7408",
+      "title": "Food Service Working"
+    },
+    {
+      "series_num": "7420",
+      "title": "Waiter"
+    },
+    {
+      "series_num": "7601",
+      "title": "General Personal Services"
+    },
+    {
+      "series_num": "7603",
+      "title": "Barbering"
+    },
+    {
+      "series_num": "8201",
+      "title": "General Fluid Systems Maintenance"
+    },
+    {
+      "series_num": "8255",
+      "title": "Pneudraulic Systems Mechanic"
+    },
+    {
+      "series_num": "8268",
+      "title": "Aircraft Pneudraulic Systems Mechanic"
+    },
+    {
+      "series_num": "8601",
+      "title": "General Engine Overhaul"
+    },
+    {
+      "series_num": "8602",
+      "title": "Aircraft Engine Mechanic"
+    },
+    {
+      "series_num": "8610",
+      "title": "Small Engine Mechanic"
+    },
+    {
+      "series_num": "8801",
+      "title": "General Aircraft Overhaul"
+    },
+    {
+      "series_num": "8810",
+      "title": "Aircraft Propeller Mechanic"
+    },
+    {
+      "series_num": "8840",
+      "title": "Aircraft Mechanical Parts Repairing"
+    },
+    {
+      "series_num": "8852",
+      "title": "Aircraft Mechanic"
+    },
+    {
+      "series_num": "8862",
+      "title": "Aircraft Attending"
+    },
+    {
+      "series_num": "9001",
+      "title": "General Film Processing"
+    },
+    {
+      "series_num": "9003",
+      "title": "Film Assembling and Repairing"
+    }
+  ],
+  "all": {
+    "0006": {
+      "title": "Correctional Institution Administration Series",
+      "system": "GS"
+    },
+    "0007": {
+      "title": "Correctional Officer Series",
+      "system": "GS"
+    },
+    "0011": {
+      "title": "Bond Sales Promotion Series",
+      "system": "GS"
+    },
+    "0018": {
+      "title": "Safety and Occupational Health Management Series",
+      "system": "GS"
+    },
+    "0019": {
+      "title": "Safety Technician Series",
+      "system": "GS"
+    },
+    "0020": {
+      "title": "Community Planning Series",
+      "system": "GS"
+    },
+    "0021": {
+      "title": "Community Planning Technician Series",
+      "system": "GS"
+    },
+    "0023": {
+      "title": "Outdoor Recreation Planning Series",
+      "system": "GS"
+    },
+    "0025": {
+      "title": "Park Ranger Series",
+      "system": "GS"
+    },
+    "0028": {
+      "title": "Environmental Protection Specialist Series",
+      "system": "GS"
+    },
+    "0029": {
+      "title": "Environmental Protection Assistant Series",
+      "system": "GS"
+    },
+    "0030": {
+      "title": "Sports Specialist Series",
+      "system": "GS"
+    },
+    "0050": {
+      "title": "Funeral Directing Series",
+      "system": "GS"
+    },
+    "0060": {
+      "title": "Chaplain Series",
+      "system": "GS"
+    },
+    "0062": {
+      "title": "Clothing Design Series",
+      "system": "GS"
+    },
+    "0072": {
+      "title": "Fingerprint Identification Series",
+      "system": "GS"
+    },
+    "0080": {
+      "title": "Security Administration Series",
+      "system": "GS"
+    },
+    "0081": {
+      "title": "Fire Protection and Prevention Series",
+      "system": "GS"
+    },
+    "0082": {
+      "title": "United States Marshal Series",
+      "system": "GS"
+    },
+    "0083": {
+      "title": "Police Series",
+      "system": "GS"
+    },
+    "0084": {
+      "title": "Nuclear Materials Courier Series",
+      "system": "GS"
+    },
+    "0085": {
+      "title": "Security Guard Series",
+      "system": "GS"
+    },
+    "0086": {
+      "title": "Security Clerical and Assistance Series",
+      "system": "GS"
+    },
+    "0089": {
+      "title": "Emergency Management Series",
+      "system": "GS"
+    },
+    "0090": {
+      "title": "Guide Series",
+      "system": "GS"
+    },
+    "0095": {
+      "title": "Foreign Law Specialist Series",
+      "system": "GS"
+    },
+    "0099": {
+      "title": "General Student Trainee Series",
+      "system": "GS"
+    },
+    "0101": {
+      "title": "Social Science Series",
+      "system": "GS"
+    },
+    "0102": {
+      "title": "Social Science Aid and Technician Series",
+      "system": "GS"
+    },
+    "0105": {
+      "title": "Social Insurance Administration Series",
+      "system": "GS"
+    },
+    "0106": {
+      "title": "Unemployment Insurance Series",
+      "system": "GS"
+    },
+    "0107": {
+      "title": "Health Insurance Administration Series",
+      "system": "GS"
+    },
+    "0110": {
+      "title": "Economist Series",
+      "system": "GS"
+    },
+    "0119": {
+      "title": "Economics Assistant Series",
+      "system": "GS"
+    },
+    "0130": {
+      "title": "Foreign Affairs Series",
+      "system": "GS"
+    },
+    "0131": {
+      "title": "International Relations Series",
+      "system": "GS"
+    },
+    "0132": {
+      "title": "Intelligence Series",
+      "system": "GS"
+    },
+    "0134": {
+      "title": "Intelligence Aid and Clerk Series",
+      "system": "GS"
+    },
+    "0135": {
+      "title": "Foreign Agricultural Affairs Series",
+      "system": "GS"
+    },
+    "0136": {
+      "title": "International Cooperation Series",
+      "system": "GS"
+    },
+    "0140": {
+      "title": "Workforce Research and Analysis Series",
+      "system": "GS"
+    },
+    "0142": {
+      "title": "Workforce Development Series",
+      "system": "GS"
+    },
+    "0150": {
+      "title": "Geography Series",
+      "system": "GS"
+    },
+    "0160": {
+      "title": "Civil Rights Analysis Series",
+      "system": "GS"
+    },
+    "0170": {
+      "title": "History Series",
+      "system": "GS"
+    },
+    "0180": {
+      "title": "Psychology Series",
+      "system": "GS"
+    },
+    "0181": {
+      "title": "Psychology Aid and Technician Series",
+      "system": "GS"
+    },
+    "0184": {
+      "title": "Sociology Series",
+      "system": "GS"
+    },
+    "0185": {
+      "title": "Social Work Series",
+      "system": "GS"
+    },
+    "0186": {
+      "title": "Social Services Aid and Assistant Series",
+      "system": "GS"
+    },
+    "0187": {
+      "title": "Social Services Series",
+      "system": "GS"
+    },
+    "0188": {
+      "title": "Recreation Specialist Series",
+      "system": "GS"
+    },
+    "0189": {
+      "title": "Recreation Aid and Assistant Series",
+      "system": "GS"
+    },
+    "0190": {
+      "title": "General Anthropology Series",
+      "system": "GS"
+    },
+    "0193": {
+      "title": "Archeology Series",
+      "system": "GS"
+    },
+    "0199": {
+      "title": "Social Science Student Trainee Series",
+      "system": "GS"
+    },
+    "0201": {
+      "title": "Human Resources Management Series",
+      "system": "GS"
+    },
+    "0203": {
+      "title": "Human Resources Assistance Series",
+      "system": "GS"
+    },
+    "0241": {
+      "title": "Mediation Series",
+      "system": "GS"
+    },
+    "0243": {
+      "title": "Apprenticeship and Training Series",
+      "system": "GS"
+    },
+    "0244": {
+      "title": "Labor Management Relations Examining Series",
+      "system": "GS"
+    },
+    "0260": {
+      "title": "Equal Employment Opportunity Series",
+      "system": "GS"
+    },
+    "0299": {
+      "title": "Human Resources Management Student Trainee Series",
+      "system": "GS"
+    },
+    "0301": {
+      "title": "Miscellaneous Administration and Program Series",
+      "system": "GS"
+    },
+    "0302": {
+      "title": "Messenger Series",
+      "system": "GS"
+    },
+    "0303": {
+      "title": "Miscellaneous Clerk and Assistant Series",
+      "system": "GS"
+    },
+    "0304": {
+      "title": "Information Receptionist Series",
+      "system": "GS"
+    },
+    "0305": {
+      "title": "Mail and File Series",
+      "system": "GS"
+    },
+    "0306": {
+      "title": "Government Information Series",
+      "system": "GS"
+    },
+    "0308": {
+      "title": "Records and Information Management Series",
+      "system": "GS"
+    },
+    "0309": {
+      "title": "Correspondence Clerk Series",
+      "system": "GS"
+    },
+    "0313": {
+      "title": "Work Unit Supervising Series",
+      "system": "GS"
+    },
+    "0318": {
+      "title": "Secretary Series",
+      "system": "GS"
+    },
+    "0319": {
+      "title": "Closed Microphone Reporting Series",
+      "system": "GS"
+    },
+    "0322": {
+      "title": "Clerk-Typist Series",
+      "system": "GS"
+    },
+    "0326": {
+      "title": "Office Automation Clerical and Assistance Series",
+      "system": "GS"
+    },
+    "0332": {
+      "title": "Computer Operation Series",
+      "system": "GS"
+    },
+    "0335": {
+      "title": "Computer Clerk and Assistant Series",
+      "system": "GS"
+    },
+    "0340": {
+      "title": "Program Management Series",
+      "system": "GS"
+    },
+    "0341": {
+      "title": "Administrative Officer Series",
+      "system": "GS"
+    },
+    "0342": {
+      "title": "Support Services Administration Series",
+      "system": "GS"
+    },
+    "0343": {
+      "title": "Management and Program Analysis Series",
+      "system": "GS"
+    },
+    "0344": {
+      "title": "Management and Program Clerical and Assistance Series",
+      "system": "GS"
+    },
+    "0346": {
+      "title": "Logistics Management Series",
+      "system": "GS"
+    },
+    "0350": {
+      "title": "Equipment Operator Series",
+      "system": "GS"
+    },
+    "0356": {
+      "title": "Data Transcriber Series",
+      "system": "GS"
+    },
+    "0360": {
+      "title": "Equal Opportunity Compliance Series",
+      "system": "GS"
+    },
+    "0361": {
+      "title": "Equal Opportunity Assistance Series",
+      "system": "GS"
+    },
+    "0382": {
+      "title": "Telephone Operating Series",
+      "system": "GS"
+    },
+    "0390": {
+      "title": "Telecommunications Processing Series",
+      "system": "GS"
+    },
+    "0391": {
+      "title": "Telecommunications Series",
+      "system": "GS"
+    },
+    "0392": {
+      "title": "General Telecommunications Series",
+      "system": "GS"
+    },
+    "0394": {
+      "title": "Communications Clerical Series",
+      "system": "GS"
+    },
+    "0399": {
+      "title": "Administration and Office Support Student Trainee Series",
+      "system": "GS"
+    },
+    "0401": {
+      "title": "General Natural Resources Management and Biological Sciences Series",
+      "system": "GS"
+    },
+    "0403": {
+      "title": "Microbiology Series",
+      "system": "GS"
+    },
+    "0404": {
+      "title": "Biological Science Technician Series",
+      "system": "GS"
+    },
+    "0405": {
+      "title": "Pharmacology Series",
+      "system": "GS"
+    },
+    "0408": {
+      "title": "Ecology Series",
+      "system": "GS"
+    },
+    "0410": {
+      "title": "Zoology Series",
+      "system": "GS"
+    },
+    "0413": {
+      "title": "Physiology Series",
+      "system": "GS"
+    },
+    "0414": {
+      "title": "Entomology Series",
+      "system": "GS"
+    },
+    "0415": {
+      "title": "Toxicology Series",
+      "system": "GS"
+    },
+    "0421": {
+      "title": "Plant Protection Technician Series",
+      "system": "GS"
+    },
+    "0430": {
+      "title": "Botany Series",
+      "system": "GS"
+    },
+    "0434": {
+      "title": "Plant Pathology Series",
+      "system": "GS"
+    },
+    "0435": {
+      "title": "Plant Physiology Series",
+      "system": "GS"
+    },
+    "0437": {
+      "title": "Horticulture Series",
+      "system": "GS"
+    },
+    "0440": {
+      "title": "Genetics Series",
+      "system": "GS"
+    },
+    "0454": {
+      "title": "Rangeland Management Series",
+      "system": "GS"
+    },
+    "0455": {
+      "title": "Range Technician Series",
+      "system": "GS"
+    },
+    "0457": {
+      "title": "Soil Conservation Series",
+      "system": "GS"
+    },
+    "0458": {
+      "title": "Soil Conservation Technician Series",
+      "system": "GS"
+    },
+    "0459": {
+      "title": "Irrigation System Operation Series",
+      "system": "GS"
+    },
+    "0460": {
+      "title": "Forestry Series",
+      "system": "GS"
+    },
+    "0462": {
+      "title": "Forestry Technician Series",
+      "system": "GS"
+    },
+    "0470": {
+      "title": "Soil Science Series",
+      "system": "GS"
+    },
+    "0471": {
+      "title": "Agronomy Series",
+      "system": "GS"
+    },
+    "0480": {
+      "title": "Fish and Wildlife Administration Series",
+      "system": "GS"
+    },
+    "0482": {
+      "title": "Fish Biology Series",
+      "system": "GS"
+    },
+    "0485": {
+      "title": "Wildlife Refuge Management Series",
+      "system": "GS"
+    },
+    "0486": {
+      "title": "Wildlife Biology Series",
+      "system": "GS"
+    },
+    "0487": {
+      "title": "Animal Science Series",
+      "system": "GS"
+    },
+    "0499": {
+      "title": "Biological Science Student Trainee Series",
+      "system": "GS"
+    },
+    "0501": {
+      "title": "Financial Administration and Program Series",
+      "system": "GS"
+    },
+    "0503": {
+      "title": "Financial Clerical and Technician Series",
+      "system": "GS"
+    },
+    "0505": {
+      "title": "Financial Management Series",
+      "system": "GS"
+    },
+    "0510": {
+      "title": "Accounting Series",
+      "system": "GS"
+    },
+    "0511": {
+      "title": "Auditing Series",
+      "system": "GS"
+    },
+    "0512": {
+      "title": "Internal Revenue Agent Series",
+      "system": "GS"
+    },
+    "0525": {
+      "title": "Accounting Technician Series",
+      "system": "GS"
+    },
+    "0526": {
+      "title": "Tax Specialist Series",
+      "system": "GS"
+    },
+    "0530": {
+      "title": "Cash Processing Series",
+      "system": "GS"
+    },
+    "0540": {
+      "title": "Voucher Examining Series",
+      "system": "GS"
+    },
+    "0544": {
+      "title": "Civilian Pay Series",
+      "system": "GS"
+    },
+    "0545": {
+      "title": "Military Pay Series",
+      "system": "GS"
+    },
+    "0560": {
+      "title": "Budget Analysis Series",
+      "system": "GS"
+    },
+    "0561": {
+      "title": "Budget Clerical and Assistance Series",
+      "system": "GS"
+    },
+    "0592": {
+      "title": "Tax Examining Series",
+      "system": "GS"
+    },
+    "0599": {
+      "title": "Financial Management Student Trainee Series",
+      "system": "GS"
+    },
+    "0601": {
+      "title": "General Medical and Healthcare Series",
+      "system": "GS"
+    },
+    "0602": {
+      "title": "Physician Series",
+      "system": "GS"
+    },
+    "0603": {
+      "title": "Physician Assistant Series",
+      "system": "GS"
+    },
+    "0610": {
+      "title": "Nursing Series",
+      "system": "GS"
+    },
+    "0620": {
+      "title": "Practical Nurse Series",
+      "system": "GS"
+    },
+    "0621": {
+      "title": "Nursing Assistant Series",
+      "system": "GS"
+    },
+    "0622": {
+      "title": "Medical Supply Aide and Technician Series",
+      "system": "GS"
+    },
+    "0630": {
+      "title": "Dietetics and Nutrition Series",
+      "system": "GS"
+    },
+    "0631": {
+      "title": "Occupational Therapy Series",
+      "system": "GS"
+    },
+    "0633": {
+      "title": "Physical Therapy Series",
+      "system": "GS"
+    },
+    "0635": {
+      "title": "Kinesiotherapy Series",
+      "system": "GS"
+    },
+    "0636": {
+      "title": "Rehabilitation Therapy Assistant Series",
+      "system": "GS"
+    },
+    "0638": {
+      "title": "Recreation/Creative Arts Therapy Series",
+      "system": "GS"
+    },
+    "0640": {
+      "title": "Health Aid and Technician Series",
+      "system": "GS"
+    },
+    "0642": {
+      "title": "Nuclear Medicine Technician Series",
+      "system": "GS"
+    },
+    "0644": {
+      "title": "Clinical Laboratory Science Series",
+      "system": "GS"
+    },
+    "0645": {
+      "title": "Medical Technician Series",
+      "system": "GS"
+    },
+    "0646": {
+      "title": "Pathology Technician Series",
+      "system": "GS"
+    },
+    "0647": {
+      "title": "Diagnostic Radiologic Technologist Series",
+      "system": "GS"
+    },
+    "0648": {
+      "title": "Therapeutic Radiologic Technologist Series",
+      "system": "GS"
+    },
+    "0649": {
+      "title": "Medical Instrument Technician Series",
+      "system": "GS"
+    },
+    "0651": {
+      "title": "Respiratory Therapist Series",
+      "system": "GS"
+    },
+    "0660": {
+      "title": "Pharmacy Series",
+      "system": "GS"
+    },
+    "0661": {
+      "title": "Pharmacy Technician Series",
+      "system": "GS"
+    },
+    "0662": {
+      "title": "Optometry Series",
+      "system": "GS"
+    },
+    "0665": {
+      "title": "Speech/Language Pathology and Audiology Series Series",
+      "system": "GS"
+    },
+    "0667": {
+      "title": "Orthotist and Prosthetist Series",
+      "system": "GS"
+    },
+    "0668": {
+      "title": "Podiatry Series",
+      "system": "GS"
+    },
+    "0669": {
+      "title": "Medical Records Administration Series",
+      "system": "GS"
+    },
+    "0670": {
+      "title": "Health System Administration Series",
+      "system": "GS"
+    },
+    "0671": {
+      "title": "Health System Specialist Series",
+      "system": "GS"
+    },
+    "0672": {
+      "title": "Prosthetic Representative Series",
+      "system": "GS"
+    },
+    "0673": {
+      "title": "Hospital Housekeeping Management Series",
+      "system": "GS"
+    },
+    "0675": {
+      "title": "Medical Records Technician Series",
+      "system": "GS"
+    },
+    "0679": {
+      "title": "Medical Support Assistance Series",
+      "system": "GS"
+    },
+    "0680": {
+      "title": "Dentistry Series",
+      "system": "GS"
+    },
+    "0681": {
+      "title": "Dental Assistant Series",
+      "system": "GS"
+    },
+    "0682": {
+      "title": "Dental Hygiene Series",
+      "system": "GS"
+    },
+    "0683": {
+      "title": "Dental Laboratory Aid and Technician Series",
+      "system": "GS"
+    },
+    "0685": {
+      "title": "Public Health Program Specialist Series",
+      "system": "GS"
+    },
+    "0688": {
+      "title": "Sanitarian Series",
+      "system": "GS"
+    },
+    "0690": {
+      "title": "Industrial Hygiene Series",
+      "system": "GS"
+    },
+    "0696": {
+      "title": "Consumer Safety Series",
+      "system": "GS"
+    },
+    "0698": {
+      "title": "Environmental Health Technician Series",
+      "system": "GS"
+    },
+    "0699": {
+      "title": "Medical and Health Student Trainee Series",
+      "system": "GS"
+    },
+    "0701": {
+      "title": "Veterinary Medical Science Series",
+      "system": "GS"
+    },
+    "0704": {
+      "title": "Animal Health Technician Series",
+      "system": "GS"
+    },
+    "0799": {
+      "title": "Veterinary Student Trainee Series",
+      "system": "GS"
+    },
+    "0801": {
+      "title": "General Engineering Series",
+      "system": "GS"
+    },
+    "0802": {
+      "title": "Engineering Technical Series",
+      "system": "GS"
+    },
+    "0803": {
+      "title": "Safety Engineering Series",
+      "system": "GS"
+    },
+    "0804": {
+      "title": "Fire Protection Engineering Series",
+      "system": "GS"
+    },
+    "0806": {
+      "title": "Materials Engineering Series",
+      "system": "GS"
+    },
+    "0807": {
+      "title": "Landscape Architecture Series",
+      "system": "GS"
+    },
+    "0808": {
+      "title": "Architecture Series",
+      "system": "GS"
+    },
+    "0809": {
+      "title": "Construction Control Technical Series",
+      "system": "GS"
+    },
+    "0810": {
+      "title": "Civil Engineering Series",
+      "system": "GS"
+    },
+    "0817": {
+      "title": "Survey Technical Series",
+      "system": "GS"
+    },
+    "0819": {
+      "title": "Environmental Engineering Series",
+      "system": "GS"
+    },
+    "0828": {
+      "title": "Construction Analyst Series",
+      "system": "GS"
+    },
+    "0830": {
+      "title": "Mechanical Engineering Series",
+      "system": "GS"
+    },
+    "0840": {
+      "title": "Nuclear Engineering Series",
+      "system": "GS"
+    },
+    "0850": {
+      "title": "Electrical Engineering Series",
+      "system": "GS"
+    },
+    "0854": {
+      "title": "Computer Engineering Series",
+      "system": "GS"
+    },
+    "0855": {
+      "title": "Electronics Engineering Series",
+      "system": "GS"
+    },
+    "0856": {
+      "title": "Electronics Technical Series",
+      "system": "GS"
+    },
+    "0858": {
+      "title": "Bioengineering and Biomedical Engineering Series",
+      "system": "GS"
+    },
+    "0861": {
+      "title": "Aerospace Engineering Series",
+      "system": "GS"
+    },
+    "0871": {
+      "title": "Naval Architecture Series",
+      "system": "GS"
+    },
+    "0873": {
+      "title": "Marine Survey Technical Series",
+      "system": "GS"
+    },
+    "0880": {
+      "title": "Mining Engineering Series",
+      "system": "GS"
+    },
+    "0881": {
+      "title": "Petroleum Engineering Series",
+      "system": "GS"
+    },
+    "0890": {
+      "title": "Agricultural Engineering Series",
+      "system": "GS"
+    },
+    "0893": {
+      "title": "Chemical Engineering Series",
+      "system": "GS"
+    },
+    "0895": {
+      "title": "Industrial Engineering Technical Series",
+      "system": "GS"
+    },
+    "0896": {
+      "title": "Industrial Engineering Series",
+      "system": "GS"
+    },
+    "0899": {
+      "title": "Engineering and Architecture Student Trainee Series",
+      "system": "GS"
+    },
+    "0901": {
+      "title": "General Legal and Kindred Administration Series",
+      "system": "GS"
+    },
+    "0904": {
+      "title": "Law Clerk Series",
+      "system": "GS"
+    },
+    "0905": {
+      "title": "General Attorney Series",
+      "system": "GS"
+    },
+    "0930": {
+      "title": "Hearings and Appeals Series",
+      "system": "GS"
+    },
+    "0950": {
+      "title": "Paralegal Specialist Series",
+      "system": "GS"
+    },
+    "0958": {
+      "title": "Employee Benefits Law Series",
+      "system": "GS"
+    },
+    "0962": {
+      "title": "Contact Representative Series",
+      "system": "GS"
+    },
+    "0963": {
+      "title": "Legal Instruments Examining Series",
+      "system": "GS"
+    },
+    "0965": {
+      "title": "Land Law Examining Series",
+      "system": "GS"
+    },
+    "0967": {
+      "title": "Passport and Visa Examining Series",
+      "system": "GS"
+    },
+    "0986": {
+      "title": "Legal Assistance Series",
+      "system": "GS"
+    },
+    "0987": {
+      "title": "Tax Law Specialist Series",
+      "system": "GS"
+    },
+    "0991": {
+      "title": "Workers' Compensation Claims Examining Series",
+      "system": "GS"
+    },
+    "0993": {
+      "title": "Railroad Retirement Claims Examining Series",
+      "system": "GS"
+    },
+    "0996": {
+      "title": "Veterans Claims Examining Series",
+      "system": "GS"
+    },
+    "0998": {
+      "title": "Claims Assistance and Examining Series",
+      "system": "GS"
+    },
+    "0999": {
+      "title": "Legal Occupations Student Trainee Series",
+      "system": "GS"
+    },
+    "1001": {
+      "title": "General Arts and Information Series",
+      "system": "GS"
+    },
+    "1008": {
+      "title": "Interior Design Series",
+      "system": "GS"
+    },
+    "1010": {
+      "title": "Exhibits Specialist Series",
+      "system": "GS"
+    },
+    "1015": {
+      "title": "Museum Curator Series",
+      "system": "GS"
+    },
+    "1016": {
+      "title": "Museum Specialist and Technician Series",
+      "system": "GS"
+    },
+    "1020": {
+      "title": "Illustrating Series",
+      "system": "GS"
+    },
+    "1035": {
+      "title": "Public Affairs Series",
+      "system": "GS"
+    },
+    "1040": {
+      "title": "Language Specialist Series",
+      "system": "GS"
+    },
+    "1046": {
+      "title": "Language Clerical Series",
+      "system": "GS"
+    },
+    "1051": {
+      "title": "Music Specialist Series",
+      "system": "GS"
+    },
+    "1054": {
+      "title": "Theater Specialist Series",
+      "system": "GS"
+    },
+    "1056": {
+      "title": "Art Specialist Series",
+      "system": "GS"
+    },
+    "1060": {
+      "title": "Photography Series",
+      "system": "GS"
+    },
+    "1071": {
+      "title": "Audiovisual Production Series",
+      "system": "GS"
+    },
+    "1082": {
+      "title": "Writing and Editing Series",
+      "system": "GS"
+    },
+    "1083": {
+      "title": "Technical Writing and Editing Series",
+      "system": "GS"
+    },
+    "1084": {
+      "title": "Visual Information Series",
+      "system": "GS"
+    },
+    "1087": {
+      "title": "Editorial Assistance Series",
+      "system": "GS"
+    },
+    "1099": {
+      "title": "Information and Arts Student Trainee Series",
+      "system": "GS"
+    },
+    "1101": {
+      "title": "General Business and Industry Series",
+      "system": "GS"
+    },
+    "1102": {
+      "title": "Contracting Series",
+      "system": "GS"
+    },
+    "1103": {
+      "title": "Industrial Property Management Series",
+      "system": "GS"
+    },
+    "1104": {
+      "title": "Property Disposal Series",
+      "system": "GS"
+    },
+    "1105": {
+      "title": "Purchasing Series",
+      "system": "GS"
+    },
+    "1106": {
+      "title": "Procurement Clerical and Technician Series",
+      "system": "GS"
+    },
+    "1107": {
+      "title": "Property Disposal Clerical and Technician Series",
+      "system": "GS"
+    },
+    "1109": {
+      "title": "Grants Management Series",
+      "system": "GS"
+    },
+    "1130": {
+      "title": "Public Utilities Specialist Series",
+      "system": "GS"
+    },
+    "1140": {
+      "title": "Trade Specialist Series",
+      "system": "GS"
+    },
+    "1144": {
+      "title": "Commissary Management Series",
+      "system": "GS"
+    },
+    "1145": {
+      "title": "Agricultural Program Specialist Series",
+      "system": "GS"
+    },
+    "1146": {
+      "title": "Agricultural Marketing Series",
+      "system": "GS"
+    },
+    "1147": {
+      "title": "Agricultural Market Reporting Series",
+      "system": "GS"
+    },
+    "1150": {
+      "title": "Industrial Specialist Series",
+      "system": "GS"
+    },
+    "1152": {
+      "title": "Production Control Series",
+      "system": "GS"
+    },
+    "1160": {
+      "title": "Financial Analysis Series",
+      "system": "GS"
+    },
+    "1163": {
+      "title": "Insurance Examining Series",
+      "system": "GS"
+    },
+    "1165": {
+      "title": "Loan Specialist Series",
+      "system": "GS"
+    },
+    "1169": {
+      "title": "Internal Revenue Officer Series",
+      "system": "GS"
+    },
+    "1170": {
+      "title": "Realty Series",
+      "system": "GS"
+    },
+    "1171": {
+      "title": "Appraising Series",
+      "system": "GS"
+    },
+    "1173": {
+      "title": "Housing Management Series",
+      "system": "GS"
+    },
+    "1176": {
+      "title": "Building Management Series",
+      "system": "GS"
+    },
+    "1199": {
+      "title": "Business and Industry Student Trainee Series",
+      "system": "GS"
+    },
+    "1202": {
+      "title": "Patent Technician Series",
+      "system": "GS"
+    },
+    "1210": {
+      "title": "Copyright Series",
+      "system": "GS"
+    },
+    "1220": {
+      "title": "Patent Administration Series",
+      "system": "GS"
+    },
+    "1221": {
+      "title": "Patent Adviser Series",
+      "system": "GS"
+    },
+    "1222": {
+      "title": "Patent Attorney Series",
+      "system": "GS"
+    },
+    "1223": {
+      "title": "Patent Classifying Series",
+      "system": "GS"
+    },
+    "1224": {
+      "title": "Patent Examining Series",
+      "system": "GS"
+    },
+    "1226": {
+      "title": "Design Patent Examining Series",
+      "system": "GS"
+    },
+    "1299": {
+      "title": "Copyright and Patent Student Trainee Series",
+      "system": "GS"
+    },
+    "1301": {
+      "title": "General Physical Science Series",
+      "system": "GS"
+    },
+    "1306": {
+      "title": "Health Physics Series",
+      "system": "GS"
+    },
+    "1310": {
+      "title": "Physics Series",
+      "system": "GS"
+    },
+    "1311": {
+      "title": "Physical Science Technician Series",
+      "system": "GS"
+    },
+    "1313": {
+      "title": "Geophysics Series",
+      "system": "GS"
+    },
+    "1315": {
+      "title": "Hydrology Series",
+      "system": "GS"
+    },
+    "1316": {
+      "title": "Hydrologic Technician Series",
+      "system": "GS"
+    },
+    "1320": {
+      "title": "Chemistry Series",
+      "system": "GS"
+    },
+    "1321": {
+      "title": "Metallurgy Series",
+      "system": "GS"
+    },
+    "1330": {
+      "title": "Astronomy and Space Science Series",
+      "system": "GS"
+    },
+    "1340": {
+      "title": "Meteorology Series",
+      "system": "GS"
+    },
+    "1341": {
+      "title": "Meteorological Technician Series",
+      "system": "GS"
+    },
+    "1350": {
+      "title": "Geology Series",
+      "system": "GS"
+    },
+    "1360": {
+      "title": "Oceanography Series",
+      "system": "GS"
+    },
+    "1361": {
+      "title": "Navigational Information Series",
+      "system": "GS"
+    },
+    "1370": {
+      "title": "Cartography Series",
+      "system": "GS"
+    },
+    "1371": {
+      "title": "Cartographic Technician Series",
+      "system": "GS"
+    },
+    "1372": {
+      "title": "Geodesy Series",
+      "system": "GS"
+    },
+    "1373": {
+      "title": "Land Surveying Series",
+      "system": "GS"
+    },
+    "1374": {
+      "title": "Geodetic Technician Series",
+      "system": "GS"
+    },
+    "1380": {
+      "title": "Forest Products Technology Series",
+      "system": "GS"
+    },
+    "1382": {
+      "title": "Food Technology Series",
+      "system": "GS"
+    },
+    "1384": {
+      "title": "Textile Technology Series",
+      "system": "GS"
+    },
+    "1397": {
+      "title": "Document Analysis Series",
+      "system": "GS"
+    },
+    "1399": {
+      "title": "Physical Science Student Trainee Series",
+      "system": "GS"
+    },
+    "1410": {
+      "title": "Librarian Series",
+      "system": "GS"
+    },
+    "1411": {
+      "title": "Library Technician Series",
+      "system": "GS"
+    },
+    "1412": {
+      "title": "Technical Information Services Series",
+      "system": "GS"
+    },
+    "1420": {
+      "title": "Archivist Series",
+      "system": "GS"
+    },
+    "1421": {
+      "title": "Archives Technician Series",
+      "system": "GS"
+    },
+    "1499": {
+      "title": "Library and Archives Student Trainee Series",
+      "system": "GS"
+    },
+    "1510": {
+      "title": "Actuarial Science Series",
+      "system": "GS"
+    },
+    "1515": {
+      "title": "Operations Research Series",
+      "system": "GS"
+    },
+    "1520": {
+      "title": "Mathematics Series",
+      "system": "GS"
+    },
+    "1521": {
+      "title": "Mathematics Technician Series",
+      "system": "GS"
+    },
+    "1529": {
+      "title": "Mathematical Statistics Series",
+      "system": "GS"
+    },
+    "1530": {
+      "title": "Statistics Series",
+      "system": "GS"
+    },
+    "1531": {
+      "title": "Statistical Assistant Series",
+      "system": "GS"
+    },
+    "1541": {
+      "title": "Cryptanalysis Series",
+      "system": "GS"
+    },
+    "1550": {
+      "title": "Computer Science Series",
+      "system": "GS"
+    },
+    "1599": {
+      "title": "Mathematics and Statistics Student Trainee Series",
+      "system": "GS"
+    },
+    "1601": {
+      "title": "Equipment, Facilities, and Services Series",
+      "system": "GS"
+    },
+    "1603": {
+      "title": "Equipment, Facilities, and Services Assistance Series",
+      "system": "GS"
+    },
+    "1630": {
+      "title": "Cemetery Administration Services Series",
+      "system": "GS"
+    },
+    "1640": {
+      "title": "Facility Operations Services Series",
+      "system": "GS"
+    },
+    "1654": {
+      "title": "Printing Services Series",
+      "system": "GS"
+    },
+    "1658": {
+      "title": "Laundry Operations Services Series",
+      "system": "GS"
+    },
+    "1667": {
+      "title": "Food Services Series",
+      "system": "GS"
+    },
+    "1670": {
+      "title": "Equipment Services Series",
+      "system": "GS"
+    },
+    "1699": {
+      "title": "Equipment, Facilities, and Services Student Trainee Series",
+      "system": "GS"
+    },
+    "1701": {
+      "title": "General Education and Training Series",
+      "system": "GS"
+    },
+    "1702": {
+      "title": "Education and Training Technician Series",
+      "system": "GS"
+    },
+    "1710": {
+      "title": "Education and Vocational Training Series",
+      "system": "GS"
+    },
+    "1712": {
+      "title": "Training Instruction Series",
+      "system": "GS"
+    },
+    "1715": {
+      "title": "Vocational Rehabilitation Series",
+      "system": "GS"
+    },
+    "1720": {
+      "title": "Education Program Series",
+      "system": "GS"
+    },
+    "1725": {
+      "title": "Public Health Educator Series",
+      "system": "GS"
+    },
+    "1730": {
+      "title": "Education Research Series",
+      "system": "GS"
+    },
+    "1740": {
+      "title": "Education Services Series",
+      "system": "GS"
+    },
+    "1750": {
+      "title": "Instructional Systems Series",
+      "system": "GS"
+    },
+    "1799": {
+      "title": "Education Student Trainee Series",
+      "system": "GS"
+    },
+    "1801": {
+      "title": "General Inspection, Investigation, Enforcement, and Compliance Series",
+      "system": "GS"
+    },
+    "1802": {
+      "title": "Compliance Inspection and Support Series",
+      "system": "GS"
+    },
+    "1805": {
+      "title": "Investigative Analysis",
+      "system": "GS"
+    },
+    "1810": {
+      "title": "General Investigation Series",
+      "system": "GS"
+    },
+    "1811": {
+      "title": "Criminal Investigation Series",
+      "system": "GS"
+    },
+    "1815": {
+      "title": "Air Safety Investigating Series",
+      "system": "GS"
+    },
+    "1822": {
+      "title": "Mine Safety and Health Inspection Series",
+      "system": "GS"
+    },
+    "1825": {
+      "title": "Aviation Safety Series",
+      "system": "GS"
+    },
+    "1849": {
+      "title": "Wage and Hour Investigation",
+      "system": "GS"
+    },
+    "1850": {
+      "title": "Agricultural Warehouse Inspection Series",
+      "system": "GS"
+    },
+    "1860": {
+      "title": "Equal Opportunity Investigation Series",
+      "system": "GS"
+    },
+    "1862": {
+      "title": "Consumer Safety Inspection Series",
+      "system": "GS"
+    },
+    "1863": {
+      "title": "Food Inspection Series",
+      "system": "GS"
+    },
+    "1881": {
+      "title": "Customs and Border Protection Interdiction Series",
+      "system": "GS"
+    },
+    "1889": {
+      "title": "Import Compliance Series",
+      "system": "GS"
+    },
+    "1894": {
+      "title": "Customs Entry and Liquidating Series",
+      "system": "GS"
+    },
+    "1895": {
+      "title": "Customs and Border Protection Series",
+      "system": "GS"
+    },
+    "1896": {
+      "title": "Border Patrol Enforcement Series",
+      "system": "GS"
+    },
+    "1899": {
+      "title": "Investigation Student Trainee Series",
+      "system": "GS"
+    },
+    "1910": {
+      "title": "Quality Assurance Series",
+      "system": "GS"
+    },
+    "1980": {
+      "title": "Agricultural Commodity Grading Series",
+      "system": "GS"
+    },
+    "1981": {
+      "title": "Agricultural Commodity Aid Series",
+      "system": "GS"
+    },
+    "1999": {
+      "title": "Quality Inspection Student Trainee Series",
+      "system": "GS"
+    },
+    "2001": {
+      "title": "General Supply Series",
+      "system": "GS"
+    },
+    "2003": {
+      "title": "Supply Program Management Series",
+      "system": "GS"
+    },
+    "2005": {
+      "title": "Supply Clerical and Technician Series",
+      "system": "GS"
+    },
+    "2010": {
+      "title": "Inventory Management Series",
+      "system": "GS"
+    },
+    "2030": {
+      "title": "Distribution Facilities and Storage Management Series",
+      "system": "GS"
+    },
+    "2032": {
+      "title": "Packaging Series",
+      "system": "GS"
+    },
+    "2091": {
+      "title": "Sales Store Clerical Series",
+      "system": "GS"
+    },
+    "2099": {
+      "title": "Supply Student Trainee Series",
+      "system": "GS"
+    },
+    "2101": {
+      "title": "Transportation Specialist Series",
+      "system": "GS"
+    },
+    "2102": {
+      "title": "Transportation Clerk and Assistant Series",
+      "system": "GS"
+    },
+    "2110": {
+      "title": "Transportation Industry Analysis Series",
+      "system": "GS"
+    },
+    "2121": {
+      "title": "Railroad Safety Series",
+      "system": "GS"
+    },
+    "2123": {
+      "title": "Motor Carrier Safety Series",
+      "system": "GS"
+    },
+    "2125": {
+      "title": "Highway Safety Series",
+      "system": "GS"
+    },
+    "2130": {
+      "title": "Traffic Management Series",
+      "system": "GS"
+    },
+    "2131": {
+      "title": "Freight Rate Series",
+      "system": "GS"
+    },
+    "2144": {
+      "title": "Cargo Scheduling Series",
+      "system": "GS"
+    },
+    "2150": {
+      "title": "Transportation Operations Series",
+      "system": "GS"
+    },
+    "2151": {
+      "title": "Dispatching Series",
+      "system": "GS"
+    },
+    "2152": {
+      "title": "Air Traffic Control Series",
+      "system": "GS"
+    },
+    "2154": {
+      "title": "Air Traffic Assistance Series",
+      "system": "GS"
+    },
+    "2161": {
+      "title": "Marine Cargo Series",
+      "system": "GS"
+    },
+    "2181": {
+      "title": "Aircraft Operation Series",
+      "system": "GS"
+    },
+    "2183": {
+      "title": "Air Navigation Series",
+      "system": "GS"
+    },
+    "2185": {
+      "title": "Aircrew Technician Series",
+      "system": "GS"
+    },
+    "2199": {
+      "title": "Transportation Student Trainee Series",
+      "system": "GS"
+    },
+    "2210": {
+      "title": "Information Technology Management Series",
+      "system": "GS"
+    },
+    "2299": {
+      "title": "Information Technology Student Trainee Series",
+      "system": "GS"
+    },
+    "2501": {
+      "title": "General Wire Communications Equipment Installation and Maintenance",
+      "system": "FWS"
+    },
+    "2502": {
+      "title": "Telecommunications Mechanic",
+      "system": "FWS"
+    },
+    "2504": {
+      "title": "Wire Communications Cable Splicing",
+      "system": "FWS"
+    },
+    "2602": {
+      "title": "Electronic Measurement Equipment Mechanic",
+      "system": "FWS"
+    },
+    "2604": {
+      "title": "Electronics Mechanic",
+      "system": "FWS"
+    },
+    "2606": {
+      "title": "Electronic Industrial Controls Mechanic",
+      "system": "FWS"
+    },
+    "2608": {
+      "title": "Electronic Digital Computer Mechanic",
+      "system": "FWS"
+    },
+    "2610": {
+      "title": "Electronic Integrated Systems Mechanic",
+      "system": "FWS"
+    },
+    "2801": {
+      "title": "General Electrical Installation and Maintenance",
+      "system": "FWS"
+    },
+    "2805": {
+      "title": "Electrician",
+      "system": "FWS"
+    },
+    "2810": {
+      "title": "High Voltage Electrician",
+      "system": "FWS"
+    },
+    "2854": {
+      "title": "Electrical Equipment Repairing",
+      "system": "FWS"
+    },
+    "2892": {
+      "title": "Aircraft Electrician",
+      "system": "FWS"
+    },
+    "3101": {
+      "title": "General Leather and Fabric Work",
+      "system": "FWS"
+    },
+    "3105": {
+      "title": "Fabric Working",
+      "system": "FWS"
+    },
+    "3106": {
+      "title": "Upholstering",
+      "system": "FWS"
+    },
+    "3111": {
+      "title": "Sewing Machine Operating",
+      "system": "FWS"
+    },
+    "3301": {
+      "title": "General Instrument Work",
+      "system": "FWS"
+    },
+    "3306": {
+      "title": "Optical Instrument Repairing",
+      "system": "FWS"
+    },
+    "3314": {
+      "title": "Instrument Making",
+      "system": "FWS"
+    },
+    "3359": {
+      "title": "Instrument Mechanic",
+      "system": "FWS"
+    },
+    "3378": {
+      "title": "Precision Measurement Equipment Calibrating",
+      "system": "FWS"
+    },
+    "3401": {
+      "title": "General Machine Tool Work",
+      "system": "FWS"
+    },
+    "3414": {
+      "title": "Machining",
+      "system": "FWS"
+    },
+    "3416": {
+      "title": "Toolmaking",
+      "system": "FWS"
+    },
+    "3428": {
+      "title": "Die Sinking",
+      "system": "FWS"
+    },
+    "3501": {
+      "title": "General Service and Support Work",
+      "system": "FWS"
+    },
+    "3502": {
+      "title": "Laboring",
+      "system": "FWS"
+    },
+    "3511": {
+      "title": "Laboratory Working",
+      "system": "FWS"
+    },
+    "3513": {
+      "title": "Coin/Currency Checking",
+      "system": "FWS"
+    },
+    "3515": {
+      "title": "Laboratory Support Working",
+      "system": "FWS"
+    },
+    "3546": {
+      "title": "Railroad Repairing",
+      "system": "FWS"
+    },
+    "3566": {
+      "title": "Custodial Working",
+      "system": "FWS"
+    },
+    "3601": {
+      "title": "General Structural and Finishing Work",
+      "system": "FWS"
+    },
+    "3602": {
+      "title": "Cement Finishing",
+      "system": "FWS"
+    },
+    "3603": {
+      "title": "Masonry",
+      "system": "FWS"
+    },
+    "3604": {
+      "title": "Tile Setting",
+      "system": "FWS"
+    },
+    "3605": {
+      "title": "Plastering",
+      "system": "FWS"
+    },
+    "3606": {
+      "title": "Roofing",
+      "system": "FWS"
+    },
+    "3610": {
+      "title": "Insulating",
+      "system": "FWS"
+    },
+    "3701": {
+      "title": "General Metal Processing",
+      "system": "FWS"
+    },
+    "3703": {
+      "title": "Welding",
+      "system": "FWS"
+    },
+    "3705": {
+      "title": "Nondestructive Testing",
+      "system": "FWS"
+    },
+    "3707": {
+      "title": "Metalizing",
+      "system": "FWS"
+    },
+    "3711": {
+      "title": "Electroplating",
+      "system": "FWS"
+    },
+    "3712": {
+      "title": "Heat Treating",
+      "system": "FWS"
+    },
+    "3725": {
+      "title": "Battery Repairing",
+      "system": "FWS"
+    },
+    "3727": {
+      "title": "Buffing and Polishing",
+      "system": "FWS"
+    },
+    "3769": {
+      "title": "Shot Peening Machine Operating",
+      "system": "FWS"
+    },
+    "3801": {
+      "title": "General Metal Working",
+      "system": "FWS"
+    },
+    "3802": {
+      "title": "Metal Forging",
+      "system": "FWS"
+    },
+    "3806": {
+      "title": "Sheet Metal Mechanic",
+      "system": "FWS"
+    },
+    "3808": {
+      "title": "Boilermaking",
+      "system": "FWS"
+    },
+    "3809": {
+      "title": "Mobile Equipment Metal Mechanic",
+      "system": "FWS"
+    },
+    "3820": {
+      "title": "Shipfitting",
+      "system": "FWS"
+    },
+    "3869": {
+      "title": "Metal Forming Machine Operating",
+      "system": "FWS"
+    },
+    "3901": {
+      "title": "General Motion Picture, Radio, Television, and Sound Equipment Operation",
+      "system": "FWS"
+    },
+    "3910": {
+      "title": "Motion Picture Projection",
+      "system": "FWS"
+    },
+    "3940": {
+      "title": "Broadcasting Equipment Operating",
+      "system": "FWS"
+    },
+    "4001": {
+      "title": "General Lens and Crystal Work",
+      "system": "FWS"
+    },
+    "4010": {
+      "title": "Prescription Eyeglass Making",
+      "system": "FWS"
+    },
+    "4101": {
+      "title": "General Painting and Paperhanging",
+      "system": "FWS"
+    },
+    "4102": {
+      "title": "Painting",
+      "system": "FWS"
+    },
+    "4104": {
+      "title": "Sign Painting",
+      "system": "FWS"
+    },
+    "4204": {
+      "title": "Pipefitting",
+      "system": "FWS"
+    },
+    "4206": {
+      "title": "Plumbing",
+      "system": "FWS"
+    },
+    "4255": {
+      "title": "Fuel Distribution System Mechanic",
+      "system": "FWS"
+    },
+    "4301": {
+      "title": "General Pliable Materials Work",
+      "system": "FWS"
+    },
+    "4352": {
+      "title": "Plastic Fabricating",
+      "system": "FWS"
+    },
+    "4361": {
+      "title": "Rubber Equipment Repairing",
+      "system": "FWS"
+    },
+    "4373": {
+      "title": "Molding",
+      "system": "FWS"
+    },
+    "4401": {
+      "title": "General Printing",
+      "system": "FWS"
+    },
+    "4402": {
+      "title": "Bindery Working",
+      "system": "FWS"
+    },
+    "4403": {
+      "title": "Hand Composing",
+      "system": "FWS"
+    },
+    "4406": {
+      "title": "Letterpress Operating",
+      "system": "FWS"
+    },
+    "4416": {
+      "title": "Offset Platemaking",
+      "system": "FWS"
+    },
+    "4417": {
+      "title": "Offset Press Operating",
+      "system": "FWS"
+    },
+    "4441": {
+      "title": "Bookbinding",
+      "system": "FWS"
+    },
+    "4449": {
+      "title": "Electrolytic Intaglio Platemaking",
+      "system": "FWS"
+    },
+    "4454": {
+      "title": "Intaglio Press Operating",
+      "system": "FWS"
+    },
+    "4601": {
+      "title": "General Wood Work",
+      "system": "FWS"
+    },
+    "4602": {
+      "title": "Blocking and Bracing",
+      "system": "FWS"
+    },
+    "4604": {
+      "title": "Wood Working",
+      "system": "FWS"
+    },
+    "4605": {
+      "title": "Wood Crafting",
+      "system": "FWS"
+    },
+    "4607": {
+      "title": "Carpentry",
+      "system": "FWS"
+    },
+    "4616": {
+      "title": "Patternmaking",
+      "system": "FWS"
+    },
+    "4701": {
+      "title": "General Maintenance and Operations Work",
+      "system": "FWS"
+    },
+    "4714": {
+      "title": "Model Making",
+      "system": "FWS"
+    },
+    "4715": {
+      "title": "Exhibits Making/Modeling",
+      "system": "FWS"
+    },
+    "4717": {
+      "title": "Boat Building and Repairing",
+      "system": "FWS"
+    },
+    "4737": {
+      "title": "General Equipment Mechanic",
+      "system": "FWS"
+    },
+    "4741": {
+      "title": "General Equipment Operating",
+      "system": "FWS"
+    },
+    "4742": {
+      "title": "Utility Systems Repairing-Operating",
+      "system": "FWS"
+    },
+    "4745": {
+      "title": "Research Laboratory Mechanic",
+      "system": "FWS"
+    },
+    "4749": {
+      "title": "Maintenance Mechanic",
+      "system": "FWS"
+    },
+    "4754": {
+      "title": "Cemetery Caretaking",
+      "system": "FWS"
+    },
+    "4801": {
+      "title": "General Equipment Maintenance",
+      "system": "FWS"
+    },
+    "4804": {
+      "title": "Locksmithing",
+      "system": "FWS"
+    },
+    "4805": {
+      "title": "Medical Equipment Repairing",
+      "system": "FWS"
+    },
+    "4816": {
+      "title": "Protective and Safety Equipment Fabricating and Repairing",
+      "system": "FWS"
+    },
+    "4818": {
+      "title": "Aircraft Survival Flight Equipment Repairing",
+      "system": "FWS"
+    },
+    "4819": {
+      "title": "Bowling Equipment Repairing",
+      "system": "FWS"
+    },
+    "4840": {
+      "title": "Tool and Equipment Repairing",
+      "system": "FWS"
+    },
+    "4850": {
+      "title": "Bearing Reconditioning",
+      "system": "FWS"
+    },
+    "4855": {
+      "title": "Domestic Appliance Repairing",
+      "system": "FWS"
+    },
+    "5001": {
+      "title": "General Plant and Animal Work",
+      "system": "FWS"
+    },
+    "5003": {
+      "title": "Gardening",
+      "system": "FWS"
+    },
+    "5026": {
+      "title": "Pest Controlling",
+      "system": "FWS"
+    },
+    "5031": {
+      "title": "Insects Production Working",
+      "system": "FWS"
+    },
+    "5042": {
+      "title": "Tree Trimming and Removing",
+      "system": "FWS"
+    },
+    "5048": {
+      "title": "Animal Caretaking",
+      "system": "FWS"
+    },
+    "5201": {
+      "title": "General Miscellaneous Occupations",
+      "system": "FWS"
+    },
+    "5205": {
+      "title": "Gas and Radiation Detecting",
+      "system": "FWS"
+    },
+    "5210": {
+      "title": "Rigging",
+      "system": "FWS"
+    },
+    "5220": {
+      "title": "Shipwright",
+      "system": "FWS"
+    },
+    "5221": {
+      "title": "Lofting",
+      "system": "FWS"
+    },
+    "5301": {
+      "title": "General Industrial Equipment Maintenance",
+      "system": "FWS"
+    },
+    "5306": {
+      "title": "Air Conditioning Equipment Mechanic",
+      "system": "FWS"
+    },
+    "5309": {
+      "title": "Heating and Boiler Plant Equipment Mechanic",
+      "system": "FWS"
+    },
+    "5313": {
+      "title": "Elevator Mechanic",
+      "system": "FWS"
+    },
+    "5317": {
+      "title": "Laundry and Dry Cleaning Equipment Repairing",
+      "system": "FWS"
+    },
+    "5318": {
+      "title": "Lock and Dam Repairing",
+      "system": "FWS"
+    },
+    "5323": {
+      "title": "Oiling and Greasing",
+      "system": "FWS"
+    },
+    "5334": {
+      "title": "Marine Machinery Mechanic",
+      "system": "FWS"
+    },
+    "5350": {
+      "title": "Production Machinery Mechanic",
+      "system": "FWS"
+    },
+    "5352": {
+      "title": "Industrial Equipment Mechanic",
+      "system": "FWS"
+    },
+    "5378": {
+      "title": "Powered Support Systems Mechanic",
+      "system": "FWS"
+    },
+    "5401": {
+      "title": "General Industrial Equipment Operation",
+      "system": "FWS"
+    },
+    "5402": {
+      "title": "Boiler Plant Operating",
+      "system": "FWS"
+    },
+    "5406": {
+      "title": "Utility Systems Operating",
+      "system": "FWS"
+    },
+    "5407": {
+      "title": "Electric Power Controlling",
+      "system": "FWS"
+    },
+    "5408": {
+      "title": "Wastewater Treatment Plant Operating",
+      "system": "FWS"
+    },
+    "5409": {
+      "title": "Water Treatment Plant Operating",
+      "system": "FWS"
+    },
+    "5413": {
+      "title": "Fuel Distribution System Operating",
+      "system": "FWS"
+    },
+    "5415": {
+      "title": "Air Conditioning Equipment Operating",
+      "system": "FWS"
+    },
+    "5419": {
+      "title": "Stationary-Engine Operating",
+      "system": "FWS"
+    },
+    "5423": {
+      "title": "Sandblasting",
+      "system": "FWS"
+    },
+    "5426": {
+      "title": "Lock and Dam Operating",
+      "system": "FWS"
+    },
+    "5438": {
+      "title": "Elevator Operating",
+      "system": "FWS"
+    },
+    "5440": {
+      "title": "Packaging Machine Operating",
+      "system": "FWS"
+    },
+    "5701": {
+      "title": "General Transportation/Mobile Equipment Operation",
+      "system": "FWS"
+    },
+    "5703": {
+      "title": "Motor Vehicle Operating",
+      "system": "FWS"
+    },
+    "5704": {
+      "title": "Fork Lift Operating",
+      "system": "FWS"
+    },
+    "5705": {
+      "title": "Tractor Operating",
+      "system": "FWS"
+    },
+    "5716": {
+      "title": "Engineering Equipment Operating",
+      "system": "FWS"
+    },
+    "5725": {
+      "title": "Crane Operating",
+      "system": "FWS"
+    },
+    "5729": {
+      "title": "Drill Rig Operating",
+      "system": "FWS"
+    },
+    "5736": {
+      "title": "Braking-Switching and Conducting",
+      "system": "FWS"
+    },
+    "5737": {
+      "title": "Locomotive Engineering",
+      "system": "FWS"
+    },
+    "5738": {
+      "title": "Railroad Maintenance Vehicle Operating",
+      "system": "FWS"
+    },
+    "5767": {
+      "title": "Airfield Clearing Equipment Operating",
+      "system": "FWS"
+    },
+    "5782": {
+      "title": "Ship Operating",
+      "system": "FWS"
+    },
+    "5784": {
+      "title": "Riverboat Operating",
+      "system": "FWS"
+    },
+    "5786": {
+      "title": "Small Craft Operating",
+      "system": "FWS"
+    },
+    "5788": {
+      "title": "Deckhand",
+      "system": "FWS"
+    },
+    "5801": {
+      "title": "General Transportation/Mobile Equipment Maintenance",
+      "system": "FWS"
+    },
+    "5803": {
+      "title": "Heavy Mobile Equipment Mechanic",
+      "system": "FWS"
+    },
+    "5806": {
+      "title": "Mobile Equipment Servicing",
+      "system": "FWS"
+    },
+    "5823": {
+      "title": "Automotive Mechanic",
+      "system": "FWS"
+    },
+    "5876": {
+      "title": "Electromotive Equipment Mechanic",
+      "system": "FWS"
+    },
+    "6501": {
+      "title": "General Ammunition, Explosives, and Toxic Materials Work",
+      "system": "FWS"
+    },
+    "6502": {
+      "title": "Explosives Operating",
+      "system": "FWS"
+    },
+    "6505": {
+      "title": "Munitions Destroying",
+      "system": "FWS"
+    },
+    "6511": {
+      "title": "Missile/Toxic Materials Handling",
+      "system": "FWS"
+    },
+    "6601": {
+      "title": "General Armament Work",
+      "system": "FWS"
+    },
+    "6605": {
+      "title": "Artillery Repairing",
+      "system": "FWS"
+    },
+    "6610": {
+      "title": "Small Arms Repairing",
+      "system": "FWS"
+    },
+    "6641": {
+      "title": "Ordnance Equipment Mechanic",
+      "system": "FWS"
+    },
+    "6652": {
+      "title": "Aircraft Ordnance Systems Mechanic",
+      "system": "FWS"
+    },
+    "6656": {
+      "title": "Special Weapons Systems Mechanic",
+      "system": "FWS"
+    },
+    "6901": {
+      "title": "General Warehousing and Stock Handling",
+      "system": "FWS"
+    },
+    "6904": {
+      "title": "Tools and Parts Attending",
+      "system": "FWS"
+    },
+    "6907": {
+      "title": "Materials Handling",
+      "system": "FWS"
+    },
+    "6910": {
+      "title": "Materials Expediting",
+      "system": "FWS"
+    },
+    "6912": {
+      "title": "Materials Examining and Identifying",
+      "system": "FWS"
+    },
+    "6913": {
+      "title": "Hazardous Waste Disposing",
+      "system": "FWS"
+    },
+    "6914": {
+      "title": "Store Working",
+      "system": "FWS"
+    },
+    "6941": {
+      "title": "Bulk Money Handling",
+      "system": "FWS"
+    },
+    "6968": {
+      "title": "Aircraft Freight Loading",
+      "system": "FWS"
+    },
+    "7001": {
+      "title": "General Packing and Processing",
+      "system": "FWS"
+    },
+    "7002": {
+      "title": "Packing",
+      "system": "FWS"
+    },
+    "7006": {
+      "title": "Preservation Servicing",
+      "system": "FWS"
+    },
+    "7009": {
+      "title": "Equipment Cleaning",
+      "system": "FWS"
+    },
+    "7301": {
+      "title": "General Laundry, Dry Cleaning, and Pressing",
+      "system": "FWS"
+    },
+    "7304": {
+      "title": "Laundry Working",
+      "system": "FWS"
+    },
+    "7305": {
+      "title": "Laundry Machine Operating",
+      "system": "FWS"
+    },
+    "7401": {
+      "title": "General Food Preparation and Serving",
+      "system": "FWS"
+    },
+    "7402": {
+      "title": "Baking",
+      "system": "FWS"
+    },
+    "7404": {
+      "title": "Cooking",
+      "system": "FWS"
+    },
+    "7405": {
+      "title": "Bartending",
+      "system": "FWS"
+    },
+    "7407": {
+      "title": "Meatcutting",
+      "system": "FWS"
+    },
+    "7408": {
+      "title": "Food Service Working",
+      "system": "FWS"
+    },
+    "7420": {
+      "title": "Waiter",
+      "system": "FWS"
+    },
+    "7601": {
+      "title": "General Personal Services",
+      "system": "FWS"
+    },
+    "7603": {
+      "title": "Barbering",
+      "system": "FWS"
+    },
+    "8201": {
+      "title": "General Fluid Systems Maintenance",
+      "system": "FWS"
+    },
+    "8255": {
+      "title": "Pneudraulic Systems Mechanic",
+      "system": "FWS"
+    },
+    "8268": {
+      "title": "Aircraft Pneudraulic Systems Mechanic",
+      "system": "FWS"
+    },
+    "8601": {
+      "title": "General Engine Overhaul",
+      "system": "FWS"
+    },
+    "8602": {
+      "title": "Aircraft Engine Mechanic",
+      "system": "FWS"
+    },
+    "8610": {
+      "title": "Small Engine Mechanic",
+      "system": "FWS"
+    },
+    "8801": {
+      "title": "General Aircraft Overhaul",
+      "system": "FWS"
+    },
+    "8810": {
+      "title": "Aircraft Propeller Mechanic",
+      "system": "FWS"
+    },
+    "8840": {
+      "title": "Aircraft Mechanical Parts Repairing",
+      "system": "FWS"
+    },
+    "8852": {
+      "title": "Aircraft Mechanic",
+      "system": "FWS"
+    },
+    "8862": {
+      "title": "Aircraft Attending",
+      "system": "FWS"
+    },
+    "9001": {
+      "title": "General Film Processing",
+      "system": "FWS"
+    },
+    "9003": {
+      "title": "Film Assembling and Repairing",
+      "system": "FWS"
+    }
+  }
+}

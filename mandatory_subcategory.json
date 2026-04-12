@@ -1,0 +1,42 @@
+{
+  "_comment": "Splits 'mandatory' into two sub-tiers. 'professional' = the degree is a prerequisite for a state license or professional certification the position requires — these jobs would require the same degree in the private sector. 'qualification' = OPM requires a degree as a federal qualification standard, but no external licensing body mandates it. Edge cases: engineering is 'qualification' because PE is optional in federal service; architecture is 'professional' because licensure is typically expected.",
+
+  "professional": {
+    "_description": "Education IS the professional credential. State license/certification requires the degree.",
+    "series": [
+      "0185", "0601", "0602", "0603", "0610",
+      "0630", "0631", "0633", "0635", "0637",
+      "0638", "0644", "0660", "0662", "0665",
+      "0668", "0680", "0690", "0701",
+      "0807", "0808"
+    ],
+    "labels": {
+      "0185": "Social Work (MSW → LCSW)",
+      "0601": "General Health Science",
+      "0602": "Physician (MD/DO → medical license)",
+      "0603": "Physician Assistant (PA program → PA-C)",
+      "0610": "Nursing (nursing program → RN)",
+      "0630": "Dietetics/Nutrition (degree → RD)",
+      "0631": "Occupational Therapy (OT program → OTR)",
+      "0633": "Physical Therapy (PT program → license)",
+      "0635": "Kinesiotherapy (degree → certification)",
+      "0637": "Manual Arts Therapist (approved curriculum)",
+      "0638": "Recreation/Creative Arts Therapy",
+      "0644": "Clinical Lab Science (degree + MLS certification)",
+      "0660": "Pharmacy (PharmD → RPh license)",
+      "0662": "Optometry (OD → optometry license)",
+      "0665": "Speech/Language Pathology (master's → CCC-SLP)",
+      "0668": "Podiatry (DPM → podiatry license)",
+      "0680": "Dentistry (DMD/DDS → dental license)",
+      "0690": "Industrial Hygiene (degree → CIH)",
+      "0701": "Veterinary (DVM → vet license)",
+      "0807": "Landscape Architecture (degree → PLA license)",
+      "0808": "Architecture (NAAB degree → RA license)"
+    }
+  },
+
+  "qualification": {
+    "_description": "OPM requires a degree as a federal qualification gate. No external licensing body mandates it. Includes engineering (ABET degree is OPM standard; PE optional in fed service), sciences, social sciences, math/stats, education, accounting, student trainees, etc.",
+    "note": "All mandatory series NOT listed in 'professional' default to this category."
+  }
+}

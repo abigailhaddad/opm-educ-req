@@ -1,0 +1,458 @@
+{
+  "total_postings": 2873178,
+  "since_year": null,
+  "combo_counts": {
+    "mandatory_professional": 311706,
+    "mandatory_qualification": 375981,
+    "optional": 1825706,
+    "none": 343896,
+    "mandatory_professional & mandatory_qualification": 14754,
+    "mandatory_qualification & optional": 748,
+    "mandatory_qualification & none": 141,
+    "mandatory_professional & mandatory_qualification & none": 53,
+    "mandatory_professional & optional": 52,
+    "optional & none": 34,
+    "mandatory_professional & mandatory_qualification & optional": 33,
+    "mandatory_professional & none": 32,
+    "mandatory_qualification & optional & none": 27,
+    "mandatory_professional & mandatory_qualification & optional & none": 14,
+    "mandatory_professional & optional & none": 1
+  },
+  "primary_counts": {
+    "mandatory_professional": 314912,
+    "mandatory_qualification": 388201,
+    "optional": 1826055,
+    "none": 344010
+  },
+  "by_year_primary": [
+    {
+      "year": 2018,
+      "total": 329356,
+      "mandatory_professional": 34321,
+      "mandatory_qualification": 46777,
+      "optional": 206862,
+      "none": 41396
+    },
+    {
+      "year": 2019,
+      "total": 349256,
+      "mandatory_professional": 34196,
+      "mandatory_qualification": 49095,
+      "optional": 225792,
+      "none": 40173
+    },
+    {
+      "year": 2020,
+      "total": 328440,
+      "mandatory_professional": 31739,
+      "mandatory_qualification": 46322,
+      "optional": 211784,
+      "none": 38595
+    },
+    {
+      "year": 2021,
+      "total": 369151,
+      "mandatory_professional": 41153,
+      "mandatory_qualification": 49278,
+      "optional": 236241,
+      "none": 42479
+    },
+    {
+      "year": 2022,
+      "total": 441604,
+      "mandatory_professional": 52116,
+      "mandatory_qualification": 60508,
+      "optional": 279707,
+      "none": 49273
+    },
+    {
+      "year": 2023,
+      "total": 454648,
+      "mandatory_professional": 51916,
+      "mandatory_qualification": 60562,
+      "optional": 291554,
+      "none": 50616
+    },
+    {
+      "year": 2024,
+      "total": 367070,
+      "mandatory_professional": 29895,
+      "mandatory_qualification": 53039,
+      "optional": 241087,
+      "none": 43049
+    },
+    {
+      "year": 2025,
+      "total": 167876,
+      "mandatory_professional": 30087,
+      "mandatory_qualification": 15981,
+      "optional": 94564,
+      "none": 27244
+    },
+    {
+      "year": 2026,
+      "total": 65777,
+      "mandatory_professional": 9489,
+      "mandatory_qualification": 6639,
+      "optional": 38464,
+      "none": 11185
+    }
+  ],
+  "by_year_combo": [
+    {
+      "year": 2018,
+      "total": 329356,
+      "mandatory_professional": 33989,
+      "mandatory_qualification": 45388,
+      "optional": 206824,
+      "none": 41386,
+      "mandatory_professional & mandatory_qualification": 1651,
+      "mandatory_qualification & optional": 73,
+      "mandatory_qualification & none": 24,
+      "mandatory_professional & mandatory_qualification & none": 9,
+      "mandatory_professional & optional": 4,
+      "optional & none": 3,
+      "mandatory_professional & mandatory_qualification & optional": 1,
+      "mandatory_professional & none": 1,
+      "mandatory_qualification & optional & none": 3,
+      "mandatory_professional & mandatory_qualification & optional & none": 0,
+      "mandatory_professional & optional & none": 0
+    },
+    {
+      "year": 2019,
+      "total": 349256,
+      "mandatory_professional": 33808,
+      "mandatory_qualification": 47627,
+      "optional": 225744,
+      "none": 40160,
+      "mandatory_professional & mandatory_qualification": 1790,
+      "mandatory_qualification & optional": 84,
+      "mandatory_qualification & none": 17,
+      "mandatory_professional & mandatory_qualification & none": 10,
+      "mandatory_professional & optional": 6,
+      "optional & none": 4,
+      "mandatory_professional & mandatory_qualification & optional": 4,
+      "mandatory_professional & none": 1,
+      "mandatory_qualification & optional & none": 1,
+      "mandatory_professional & mandatory_qualification & optional & none": 0,
+      "mandatory_professional & optional & none": 0
+    },
+    {
+      "year": 2020,
+      "total": 328440,
+      "mandatory_professional": 31417,
+      "mandatory_qualification": 44847,
+      "optional": 211745,
+      "none": 38589,
+      "mandatory_professional & mandatory_qualification": 1693,
+      "mandatory_qualification & optional": 108,
+      "mandatory_qualification & none": 16,
+      "mandatory_professional & mandatory_qualification & none": 12,
+      "mandatory_professional & optional": 5,
+      "optional & none": 2,
+      "mandatory_professional & mandatory_qualification & optional": 3,
+      "mandatory_professional & none": 0,
+      "mandatory_qualification & optional & none": 2,
+      "mandatory_professional & mandatory_qualification & optional & none": 1,
+      "mandatory_professional & optional & none": 0
+    },
+    {
+      "year": 2021,
+      "total": 369151,
+      "mandatory_professional": 40765,
+      "mandatory_qualification": 47759,
+      "optional": 236180,
+      "none": 42471,
+      "mandatory_professional & mandatory_qualification": 1813,
+      "mandatory_qualification & optional": 123,
+      "mandatory_qualification & none": 24,
+      "mandatory_professional & mandatory_qualification & none": 3,
+      "mandatory_professional & optional": 10,
+      "optional & none": 1,
+      "mandatory_professional & mandatory_qualification & optional": 1,
+      "mandatory_professional & none": 0,
+      "mandatory_qualification & optional & none": 1,
+      "mandatory_professional & mandatory_qualification & optional & none": 0,
+      "mandatory_professional & optional & none": 0
+    },
+    {
+      "year": 2022,
+      "total": 441604,
+      "mandatory_professional": 51698,
+      "mandatory_qualification": 58585,
+      "optional": 279648,
+      "none": 49251,
+      "mandatory_professional & mandatory_qualification": 2236,
+      "mandatory_qualification & optional": 126,
+      "mandatory_qualification & none": 20,
+      "mandatory_professional & mandatory_qualification & none": 3,
+      "mandatory_professional & optional": 9,
+      "optional & none": 10,
+      "mandatory_professional & mandatory_qualification & optional": 10,
+      "mandatory_professional & none": 1,
+      "mandatory_qualification & optional & none": 7,
+      "mandatory_professional & mandatory_qualification & optional & none": 0,
+      "mandatory_professional & optional & none": 0
+    },
+    {
+      "year": 2023,
+      "total": 454648,
+      "mandatory_professional": 51474,
+      "mandatory_qualification": 58620,
+      "optional": 291520,
+      "none": 50588,
+      "mandatory_professional & mandatory_qualification": 2301,
+      "mandatory_qualification & optional": 85,
+      "mandatory_qualification & none": 19,
+      "mandatory_professional & mandatory_qualification & none": 5,
+      "mandatory_professional & optional": 4,
+      "optional & none": 4,
+      "mandatory_professional & mandatory_qualification & optional": 3,
+      "mandatory_professional & none": 19,
+      "mandatory_qualification & optional & none": 4,
+      "mandatory_professional & mandatory_qualification & optional & none": 2,
+      "mandatory_professional & optional & none": 0
+    },
+    {
+      "year": 2024,
+      "total": 367070,
+      "mandatory_professional": 29244,
+      "mandatory_qualification": 51266,
+      "optional": 241047,
+      "none": 43029,
+      "mandatory_professional & mandatory_qualification": 2326,
+      "mandatory_qualification & optional": 92,
+      "mandatory_qualification & none": 18,
+      "mandatory_professional & mandatory_qualification & none": 10,
+      "mandatory_professional & optional": 8,
+      "optional & none": 5,
+      "mandatory_professional & mandatory_qualification & optional": 5,
+      "mandatory_professional & none": 10,
+      "mandatory_qualification & optional & none": 4,
+      "mandatory_professional & mandatory_qualification & optional & none": 6,
+      "mandatory_professional & optional & none": 0
+    },
+    {
+      "year": 2025,
+      "total": 167876,
+      "mandatory_professional": 29875,
+      "mandatory_qualification": 15465,
+      "optional": 94548,
+      "none": 27239,
+      "mandatory_professional & mandatory_qualification": 692,
+      "mandatory_qualification & optional": 38,
+      "mandatory_qualification & none": 1,
+      "mandatory_professional & mandatory_qualification & none": 0,
+      "mandatory_professional & optional": 3,
+      "optional & none": 3,
+      "mandatory_professional & mandatory_qualification & optional": 4,
+      "mandatory_professional & none": 0,
+      "mandatory_qualification & optional & none": 4,
+      "mandatory_professional & mandatory_qualification & optional & none": 3,
+      "mandatory_professional & optional & none": 1
+    },
+    {
+      "year": 2026,
+      "total": 65777,
+      "mandatory_professional": 9436,
+      "mandatory_qualification": 6424,
+      "optional": 38450,
+      "none": 11183,
+      "mandatory_professional & mandatory_qualification": 252,
+      "mandatory_qualification & optional": 19,
+      "mandatory_qualification & none": 2,
+      "mandatory_professional & mandatory_qualification & none": 1,
+      "mandatory_professional & optional": 3,
+      "optional & none": 2,
+      "mandatory_professional & mandatory_qualification & optional": 2,
+      "mandatory_professional & none": 0,
+      "mandatory_qualification & optional & none": 1,
+      "mandatory_professional & mandatory_qualification & optional & none": 2,
+      "mandatory_professional & optional & none": 0
+    }
+  ],
+  "top_series_by_volume": [
+    {
+      "series": "0301",
+      "postings": 181578,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "0343",
+      "postings": 122403,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "0610",
+      "postings": 120686,
+      "tier": "mandatory",
+      "mandatory_type": "professional"
+    },
+    {
+      "series": "2210",
+      "postings": 112889,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "0303",
+      "postings": 96213,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "0201",
+      "postings": 71870,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "1101",
+      "postings": 61887,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "0185",
+      "postings": 60590,
+      "tier": "mandatory",
+      "mandatory_type": "professional"
+    },
+    {
+      "series": "0801",
+      "postings": 50850,
+      "tier": "mandatory",
+      "mandatory_type": "qualification"
+    },
+    {
+      "series": "0679",
+      "postings": 44688,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "1102",
+      "postings": 42521,
+      "tier": "mandatory",
+      "mandatory_type": "qualification"
+    },
+    {
+      "series": "0501",
+      "postings": 41534,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "0602",
+      "postings": 38805,
+      "tier": "mandatory",
+      "mandatory_type": "professional"
+    },
+    {
+      "series": "1702",
+      "postings": 36693,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "0101",
+      "postings": 35297,
+      "tier": "mandatory",
+      "mandatory_type": "qualification"
+    },
+    {
+      "series": "0620",
+      "postings": 32145,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "0189",
+      "postings": 31441,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "0080",
+      "postings": 29422,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "0640",
+      "postings": 29368,
+      "tier": "optional",
+      "mandatory_type": ""
+    },
+    {
+      "series": "0180",
+      "postings": 29014,
+      "tier": "mandatory",
+      "mandatory_type": "qualification"
+    }
+  ],
+  "top_missing_series": [
+    {
+      "series": "4749",
+      "postings": 22348
+    },
+    {
+      "series": "3566",
+      "postings": 20552
+    },
+    {
+      "series": "7408",
+      "postings": 18784
+    },
+    {
+      "series": "5801",
+      "postings": 18250
+    },
+    {
+      "series": "7404",
+      "postings": 16388
+    },
+    {
+      "series": "6907",
+      "postings": 12356
+    },
+    {
+      "series": "5803",
+      "postings": 11957
+    },
+    {
+      "series": "8852",
+      "postings": 11894
+    },
+    {
+      "series": "5703",
+      "postings": 10021
+    },
+    {
+      "series": "3502",
+      "postings": 8992
+    },
+    {
+      "series": "2805",
+      "postings": 6193
+    },
+    {
+      "series": "2604",
+      "postings": 5444
+    },
+    {
+      "series": "6914",
+      "postings": 4865
+    },
+    {
+      "series": "5306",
+      "postings": 4685
+    },
+    {
+      "series": "7407",
+      "postings": 4440
+    }
+  ]
+}

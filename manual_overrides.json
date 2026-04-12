@@ -1,0 +1,12 @@
+{
+  "_comment": "Manual tier overrides after full series-by-series audit. Applied after auto-classification in scrape_opm.py. Each entry: series_num → {tier, reason}.",
+  "0603": {"tier": "mandatory", "reason": "PA program accredited by ARC-PA required; no experience-only path"},
+  "0610": {"tier": "mandatory", "reason": "Accredited nursing education (degree, associate, or diploma) is required"},
+  "0660": {"tier": "mandatory", "reason": "Doctoral degree in Pharmacy required"},
+  "0662": {"tier": "mandatory", "reason": "Doctor of Optometry degree required"},
+  "0668": {"tier": "mandatory", "reason": "Doctor of Podiatric Medicine (DPM) required"},
+  "0680": {"tier": "mandatory", "reason": "Doctor of Dental Medicine (DMD) or DDS degree required"},
+  "0701": {"tier": "mandatory", "reason": "Doctor of Veterinary Medicine (DVM) required"},
+  "1102": {"tier": "mandatory", "reason": "Bachelor's degree OR 24 semester hours required; both paths are education, no pure experience path"},
+  "1881": {"tier": "none", "reason": "No education requirement; driver's license + experience only; 'degree' cue was false positive"}
+}

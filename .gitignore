@@ -1,0 +1,8 @@
+cache/
+__pycache__/
+*.pyc
+.DS_Store
+.claude/
+opm_education_requirements.csv
+opm_education_requirements.json
+analysis.html
