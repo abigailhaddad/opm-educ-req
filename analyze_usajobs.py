@@ -460,9 +460,41 @@ def main() -> int:
     for syr in series_year_rows:
         syr["series_title"] = title_lookup.get(syr["series_num"], "")
 
+    # ---- dept-split datasets for client-side filtering ----
+    dept_series = df["hiringDepartmentName"].fillna("Unknown")
+    depts_sorted = sorted(str(d) for d in dept_series.unique())
+    dept_idx = {d: i for i, d in enumerate(depts_sorted)}
+
+    # primary-category x dept x year (drives stat cards + by-year table)
+    prim_counter: Counter = Counter()
+    for dep, yr, cat in zip(dept_series, df["_year"], df["_primary"]):
+        if pd.isna(yr):
+            continue
+        prim_counter[(dept_idx[str(dep)], cat, int(yr))] += 1
+    dsy_primary = [[d, c, y, n] for (d, c, y), n in prim_counter.items()]
+
+    # series (all listed codes) x dept x year (drives series-year table + crosswalk)
+    ser_counter: Counter = Counter()
+    for dep, yr, codes in zip(dept_series, df["_year"], codes_list):
+        if pd.isna(yr):
+            continue
+        yi = int(yr)
+        di = dept_idx[str(dep)]
+        for c in codes:
+            ser_counter[(di, c, yi)] += 1
+    dsy_series = [[d, s, y, n] for (d, s, y), n in ser_counter.items()]
+
+    series_meta = {
+        cr["series_num"]: {"category": cr["category"], "title": cr["series_title"]}
+        for cr in crosswalk_rows
+    }
+
     html_path = HERE / "analysis.html"
     html_path.write_text(
-        render_analysis_html(payload, crosswalk_rows, series_year_rows, yrs),
+        render_analysis_html(
+            payload, crosswalk_rows, series_year_rows, yrs,
+            depts_sorted, dsy_primary, dsy_series, series_meta,
+        ),
         encoding="utf-8",
     )
 
@@ -477,6 +509,10 @@ def render_analysis_html(
     crosswalk: list[dict],
     series_year_rows: list[dict],
     yrs: list[int],
+    depts_sorted: list[str],
+    dsy_primary: list[list],
+    dsy_series: list[list],
+    series_meta: dict,
 ) -> str:
     import time as _time
 
@@ -626,6 +662,29 @@ def render_analysis_html(
     .methodology { font-size: 0.9rem; }
     .methodology dt { font-weight: 700; margin-top: .6em; }
     .methodology dd { margin-left: 1.2em; }
+
+    /* global filter bar */
+    .global-filters { background: var(--color-surface); border: 1px solid var(--color-border);
+                      border-radius: var(--card-radius); padding: 1rem 1.25rem; margin-bottom: 1.5rem;
+                      display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: flex-start; }
+    .gf-group { display: flex; flex-direction: column; gap: .35rem; min-width: 0; }
+    .gf-group > .gf-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+                            letter-spacing: 0.03em; color: var(--color-text-muted); }
+    .gf-options { display: flex; flex-wrap: wrap; gap: .25rem .9rem; max-height: 9.5rem;
+                  overflow-y: auto; padding-right: .25rem; }
+    .gf-dept .gf-options { max-width: 520px; }
+    .gf-opt { display: flex; align-items: center; gap: .3rem; font-size: 0.8125rem;
+              white-space: nowrap; cursor: pointer; }
+    .gf-opt input { cursor: pointer; }
+    .gf-actions { display: flex; gap: .5rem; align-items: center; margin-left: auto; align-self: center; }
+    .gf-btn { font-family: var(--font-body); font-size: 0.8rem; font-weight: 600;
+              padding: 0.4rem 0.9rem; border-radius: 0.375rem; cursor: pointer;
+              border: 1px solid var(--color-border); background: var(--color-bg);
+              color: var(--color-text); transition: all 0.15s; }
+    .gf-btn:hover { border-color: var(--color-highlight); }
+    .gf-btn.primary { background: var(--color-accent); color: #fff; border-color: var(--color-accent); }
+    .gf-btn.primary:hover { background: var(--color-accent-hover); }
+    .gf-copied { font-size: 0.78rem; color: var(--color-accent); font-weight: 600; }
     """
 
     p = []
@@ -648,8 +707,11 @@ def render_analysis_html(
         f"<a href='https://presentofcoding.substack.com'>Blog</a>).</p>"
     )
 
+    # Global filter bar (populated by JS from embedded data + URL)
+    p.append("<div class='global-filters' id='globalFilters'></div>")
+
     # Stat cards
-    p.append("<div class='stats-row'>")
+    p.append("<div class='stats-row' id='statsRow'>")
     for cat in FOUR_CATS:
         n = pc.get(cat, 0)
         p.append(
@@ -677,7 +739,7 @@ def render_analysis_html(
     p.append("<table class='data-table'><thead><tr><th>Year</th><th>Total</th>")
     for cat in FOUR_CATS:
         p.append(f"<th><span class='cat-badge cat-{cat}'>{CAT_LABELS[cat]}</span></th>")
-    p.append("</tr></thead><tbody>")
+    p.append("</tr></thead><tbody id='byYearBody'>")
     for row in payload["by_year_primary"]:
         y = row["year"]; t = row["total"]
         p.append(f"<tr><td>{y}</td><td>{t:,}</td>")
@@ -727,22 +789,10 @@ def render_analysis_html(
     )
     p.append("</div></div>")
 
-    # Reusable filter bar HTML
-    def _filter_bar(table_id: str) -> str:
-        return (
-            f"<div class='filter-row'>"
-            f"<label>Filter by category:</label>"
-            f"<select class='cat-filter' data-table='{table_id}'>"
-            f"<option value=''>All</option></select>"
-            f"<button class='clear-btn' data-table='{table_id}'>Clear</button>"
-            f"</div>"
-        )
-
     # --- TAB 2: By Series & Year ---
     p.append("<div class='tab-panel' id='tab-by-series-year'>")
     p.append("<p style='font-size:0.85rem;color:var(--color-text-muted)'>"
-             "Posting counts per series per year. Filter by category or search.</p>")
-    p.append(_filter_bar("series-year-table"))
+             "Posting counts per series per year. Use the filters above or search.</p>")
     p.append("<table id='series-year-table' class='display compact' style='width:100%'>")
     p.append("<thead><tr><th>Category</th><th>Series</th><th>Title</th><th>Total</th>")
     for y in yrs:
@@ -755,7 +805,6 @@ def render_analysis_html(
     p.append("<p style='font-size:0.85rem;color:var(--color-text-muted)'>"
              "Every occupational series with its education classification. "
              "Click <strong>View OPM Text</strong> to read the actual requirement and verify.</p>")
-    p.append(_filter_bar("crosswalk"))
     p.append("<table id='crosswalk' class='display compact' style='width:100%'>")
     p.append("<thead><tr><th>Category</th><th>Series</th><th>Title</th>"
              "<th>Postings</th><th>OPM Text</th><th>Source</th></tr></thead>"
@@ -774,13 +823,24 @@ def render_analysis_html(
     )
 
     # Embed data
-    sy_json = json.dumps(series_year_rows, ensure_ascii=False).replace("</", "<\\/")
-    cw_json = json.dumps(crosswalk, ensure_ascii=False).replace("</", "<\\/")
-    p.append(f"<script id='sy-data' type='application/json'>{sy_json}</script>")
+    def _embed(s: str) -> str:
+        return s.replace("</", "<\\/")
+
+    cw_json = _embed(json.dumps(crosswalk, ensure_ascii=False))
+    depts_json = _embed(json.dumps(depts_sorted, ensure_ascii=False))
+    dsyp_json = _embed(json.dumps(dsy_primary, ensure_ascii=False))
+    dsys_json = _embed(json.dumps(dsy_series, ensure_ascii=False))
+    smeta_json = _embed(json.dumps(series_meta, ensure_ascii=False))
     p.append(f"<script id='cw-data' type='application/json'>{cw_json}</script>")
+    p.append(f"<script id='depts-data' type='application/json'>{depts_json}</script>")
+    p.append(f"<script id='dsyp-data' type='application/json'>{dsyp_json}</script>")
+    p.append(f"<script id='dsys-data' type='application/json'>{dsys_json}</script>")
+    p.append(f"<script id='smeta-data' type='application/json'>{smeta_json}</script>")
 
     yr_cols_js = json.dumps([str(y) for y in yrs])
     cat_labels_js = json.dumps(CAT_LABELS)
+    cat_desc_js = json.dumps(STAT_DESC)
+    cat_cls_js = json.dumps(STAT_CLS)
 
     p.append('<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>')
     p.append('<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>')
@@ -788,7 +848,16 @@ def render_analysis_html(
     p.append(f"""<script>
 (function() {{
   const catLabels = {cat_labels_js};
-  const yrCols = {yr_cols_js};
+  const catDesc   = {cat_desc_js};
+  const catCls    = {cat_cls_js};
+  const YEARS = {yr_cols_js};
+  const CATS = ['mandatory_professional','mandatory_qualification','optional','none'];
+  const DEPTS     = JSON.parse(document.getElementById('depts-data').textContent);
+  const DSY_PRIM  = JSON.parse(document.getElementById('dsyp-data').textContent);
+  const DSY_SER   = JSON.parse(document.getElementById('dsys-data').textContent);
+  const seriesMeta= JSON.parse(document.getElementById('smeta-data').textContent);
+  const cwData    = JSON.parse(document.getElementById('cw-data').textContent);
+
   const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')
     .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   const badgeHtml = cat => '<span class="cat-badge cat-'+esc(cat)+'">'
@@ -806,65 +875,185 @@ def render_analysis_html(
     }});
   }});
 
-  // ---- Shared: category filter logic ----
-  const tables = {{}};
-  const activeFilters = {{}};
+  // ---- Filter state ----
+  const sel = {{ dept:new Set(), year:new Set(), cat:new Set() }};
 
-  function setupCatFilter(tableId, data) {{
-    const counts = {{}};
-    data.forEach(r => {{ counts[r.category] = (counts[r.category]||0)+1; }});
-    const order = ['mandatory_professional','mandatory_qualification','optional','none'];
-    const sel = document.querySelector(`.cat-filter[data-table="${{tableId}}"]`);
-    if (!sel) return;
-    order.forEach(cat => {{
-      if (!counts[cat]) return;
-      const opt = document.createElement('option');
-      opt.value = cat;
-      opt.textContent = (catLabels[cat]||cat) + ' (' + counts[cat] + ')';
-      sel.appendChild(opt);
+  function readURL() {{
+    const q = new URLSearchParams(location.search);
+    const load = (key, set, valid) => {{
+      const raw = q.get(key);
+      if (!raw) return;
+      raw.split(',').map(s=>s.trim()).filter(Boolean).forEach(v => {{
+        if (valid(v)) set.add(v);
+      }});
+    }};
+    load('dept', sel.dept, v=>DEPTS.includes(v));
+    load('year', sel.year, v=>YEARS.includes(v));
+    load('cat',  sel.cat,  v=>CATS.includes(v));
+  }}
+
+  function writeURL() {{
+    const q = new URLSearchParams();
+    if (sel.dept.size) q.set('dept', DEPTS.filter(d=>sel.dept.has(d)).join(','));
+    if (sel.year.size) q.set('year', YEARS.filter(y=>sel.year.has(y)).join(','));
+    if (sel.cat.size)  q.set('cat',  CATS.filter(c=>sel.cat.has(c)).join(','));
+    const qs = q.toString();
+    history.replaceState(null, '', qs ? location.pathname + '?' + qs : location.pathname);
+  }}
+
+  // ---- Filter UI ----
+  function buildFilters() {{
+    const gf = document.getElementById('globalFilters');
+    const group = (cls, label, items, set, fmt) => {{
+      let h = '<div class="gf-group '+cls+'"><span class="gf-label">'+label+'</span><div class="gf-options">';
+      items.forEach(it => {{
+        const ck = set.has(it) ? ' checked' : '';
+        h += '<label class="gf-opt"><input type="checkbox" value="'+esc(it)+'"'+ck+'>'
+           + esc(fmt?fmt(it):it) + '</label>';
+      }});
+      return h + '</div></div>';
+    }};
+    gf.innerHTML =
+      group('gf-dept', 'Department', DEPTS, sel.dept) +
+      group('gf-year', 'Year', YEARS, sel.year) +
+      group('gf-cat',  'Category', CATS, sel.cat, c=>catLabels[c]||c) +
+      '<div class="gf-actions">'
+      + '<button class="gf-btn" id="gfClear">Clear all</button>'
+      + '<button class="gf-btn primary" id="gfCopy">Copy link</button>'
+      + '<span class="gf-copied" id="gfCopied" style="display:none">Copied!</span></div>';
+
+    const wire = (selector, set) => gf.querySelectorAll(selector+' input').forEach(cb =>
+      cb.addEventListener('change', () => {{
+        if (cb.checked) set.add(cb.value); else set.delete(cb.value);
+        writeURL(); applyAll();
+      }}));
+    wire('.gf-dept', sel.dept);
+    wire('.gf-year', sel.year);
+    wire('.gf-cat',  sel.cat);
+    document.getElementById('gfClear').addEventListener('click', () => {{
+      sel.dept.clear(); sel.year.clear(); sel.cat.clear();
+      gf.querySelectorAll('input[type=checkbox]').forEach(cb => cb.checked = false);
+      writeURL(); applyAll();
     }});
-    activeFilters[tableId] = '';
-    sel.addEventListener('change', function() {{
-      activeFilters[tableId] = this.value;
-      tables[tableId].draw();
-    }});
-    const clearBtn = document.querySelector(`.clear-btn[data-table="${{tableId}}"]`);
-    if (clearBtn) clearBtn.addEventListener('click', function() {{
-      sel.value = '';
-      activeFilters[tableId] = '';
-      tables[tableId].search('').draw();
+    document.getElementById('gfCopy').addEventListener('click', () => {{
+      navigator.clipboard.writeText(location.href).then(() => {{
+        const c = document.getElementById('gfCopied');
+        c.style.display = 'inline';
+        setTimeout(() => c.style.display = 'none', 1500);
+      }});
     }});
   }}
 
-  // Custom search: filter by category column (raw data, not rendered HTML)
-  $.fn.dataTable.ext.search.push(function(settings, searchData, idx) {{
-    const tid = settings.nTable.id;
-    if (!activeFilters[tid]) return true;
-    const tbl = tables[tid];
-    if (!tbl) return true;
-    const rowData = tbl.row(idx).data();
-    return rowData && rowData.category === activeFilters[tid];
-  }});
+  // ---- Filter predicates ----
+  const deptOk = d => !sel.dept.size || sel.dept.has(DEPTS[d]);
+  const yearOk = y => !sel.year.size || sel.year.has(String(y));
+  const catOk  = c => !sel.cat.size  || sel.cat.has(c);
 
-  // ---- Tab 2: Series × Year ----
-  const syData = JSON.parse(document.getElementById('sy-data').textContent);
+  // ---- Aggregations ----
+  function cardCounts() {{
+    const out = {{}}; CATS.forEach(c=>out[c]=0); let total = 0;
+    for (const [d,c,y,n] of DSY_PRIM) {{
+      if (!deptOk(d) || !yearOk(y)) continue;
+      out[c] = (out[c]||0) + n; total += n;
+    }}
+    return {{out, total}};
+  }}
+  function byYear() {{
+    const m = {{}};
+    for (const [d,c,y,n] of DSY_PRIM) {{
+      if (!deptOk(d) || !yearOk(y)) continue;
+      const e = m[y] || (m[y] = {{total:0}});
+      e[c] = (e[c]||0) + n; e.total += n;
+    }}
+    return m;
+  }}
+  function seriesAgg() {{
+    const m = {{}};
+    for (const [d,s,y,n] of DSY_SER) {{
+      if (!deptOk(d) || !yearOk(y)) continue;
+      const e = m[s] || (m[s] = {{total:0, yr:{{}}}});
+      e.total += n; e.yr[y] = (e.yr[y]||0) + n;
+    }}
+    return m;
+  }}
+
+  // ---- Renderers ----
+  function renderCards() {{
+    const {{out, total}} = cardCounts();
+    const pct = n => total ? Math.round(n/total*100)+'%' : '0%';
+    let h = '';
+    CATS.forEach(c => {{
+      const n = out[c]||0;
+      h += '<div class="stat-card '+catCls[c]+'">'
+         + '<div class="stat-label">'+catLabels[c]+'</div>'
+         + '<div class="stat-value">'+pct(n)+'</div>'
+         + '<div class="stat-sub">'+n.toLocaleString()+' postings</div>'
+         + '<div class="stat-sub">'+catDesc[c]+'</div></div>';
+    }});
+    document.getElementById('statsRow').innerHTML = h;
+  }}
+  function renderByYear() {{
+    const m = byYear();
+    const years = YEARS.filter(y => yearOk(y));
+    let h = '';
+    years.forEach(ys => {{
+      const y = Number(ys); const e = m[y] || {{total:0}}; const t = e.total||0;
+      h += '<tr><td>'+ys+'</td><td>'+t.toLocaleString()+'</td>';
+      CATS.forEach(c => {{
+        const n = e[c]||0; const pv = t ? Math.round(n/t*100) : 0;
+        h += '<td>'+n.toLocaleString()+' <span class="pct">('+pv+'%)</span></td>';
+      }});
+      h += '</tr>';
+    }});
+    if (!h) h = '<tr><td colspan="6" style="text-align:center;color:var(--color-text-muted)">'
+              + 'No data for this selection</td></tr>';
+    document.getElementById('byYearBody').innerHTML = h;
+  }}
+  function setTable(tbl, rows) {{ if (!tbl) return; tbl.clear(); tbl.rows.add(rows); tbl.draw(); }}
+  function renderSeriesYear() {{
+    const agg = seriesAgg(); const rows = [];
+    for (const s in agg) {{
+      const meta = seriesMeta[s] || {{}}; const cat = meta.category || 'none';
+      if (!catOk(cat)) continue;
+      const a = agg[s];
+      const row = {{category:cat, series_num:s, series_title:meta.title||'', total:a.total}};
+      YEARS.forEach(y => {{ row[y] = a.yr[y] || 0; }});
+      rows.push(row);
+    }}
+    setTable(tables['series-year-table'], rows);
+  }}
+  function renderCrosswalk() {{
+    const agg = seriesAgg(); const filtered = sel.dept.size || sel.year.size;
+    const rows = [];
+    cwData.forEach(cw => {{
+      if (!catOk(cw.category)) return;
+      const a = agg[cw.series_num];
+      const postings = a ? a.total : 0;
+      if (filtered && postings === 0) return;
+      rows.push(Object.assign({{}}, cw, {{postings:postings}}));
+    }});
+    setTable(tables['crosswalk'], rows);
+  }}
+  function applyAll() {{
+    renderCards(); renderByYear(); renderSeriesYear(); renderCrosswalk();
+  }}
+
+  // ---- DataTables ----
+  const tables = {{}};
   const syCols = [
     {{ data:'category', render:d=>badgeHtml(d), className:'cat-cell' }},
     {{ data:'series_num', render:d=>'<code>'+esc(d)+'</code>' }},
     {{ data:'series_title' }},
     {{ data:'total', render:numFmt }}
   ];
-  yrCols.forEach(y => syCols.push({{ data:y, render:numFmt }}));
+  YEARS.forEach(y => syCols.push({{ data:y, render:numFmt }}));
   tables['series-year-table'] = $('#series-year-table').DataTable({{
-    data: syData, pageLength: 25, order:[[3,'desc']], columns: syCols
+    data: [], pageLength: 25, order:[[3,'desc']], columns: syCols
   }});
-  setupCatFilter('series-year-table', syData);
 
-  // ---- Tab 3: Crosswalk ----
-  const cwData = JSON.parse(document.getElementById('cw-data').textContent);
   const DOD_NOTE_SERIES = ['1102','0081'];
   tables['crosswalk'] = $('#crosswalk').DataTable({{
-    data: cwData, pageLength: 25, order:[[3,'desc']],
+    data: [], pageLength: 25, order:[[3,'desc']],
     columns: [
       {{ data:'category', render:d=>badgeHtml(d), className:'cat-cell' }},
       {{ data:'series_num', render:d=>'<code>'+esc(d)+'</code>' }},
@@ -876,7 +1065,6 @@ def render_analysis_html(
         render:d => d ? '<a href="'+esc(d)+'" target="_blank">Source</a>' : '' }}
     ]
   }});
-  setupCatFilter('crosswalk', cwData);
 
   // ---- Modal ----
   const overlay = document.getElementById('modalOverlay');
@@ -916,6 +1104,11 @@ def render_analysis_html(
   overlay.addEventListener('click', e => {{ if(e.target===overlay) overlay.classList.remove('open'); }});
   document.getElementById('modalClose').addEventListener('click', () => overlay.classList.remove('open'));
   document.addEventListener('keydown', e => {{ if(e.key==='Escape') overlay.classList.remove('open'); }});
+
+  // ---- Init ----
+  readURL();
+  buildFilters();
+  applyAll();
 }})();
 </script>""")
 
