@@ -708,6 +708,8 @@ def render_analysis_html(
     .filter-option:hover { background: var(--color-surface); }
     .filter-option input { width: 16px; height: 16px; accent-color: var(--color-accent); cursor: pointer; }
     .filter-option .opt-count { color: var(--color-text-muted); font-size: 0.78rem; margin-left: auto; }
+    .filter-selectall { border-bottom: 1px solid var(--color-border); margin-bottom: 4px;
+                        border-radius: 0; }
     .filter-buttons { display: flex; gap: 9px; justify-content: flex-end; margin-top: 14px; }
     .filter-buttons button { font-family: var(--font-body); font-size: 0.82rem; font-weight: 600;
                              padding: 6px 14px; border-radius: 0.375rem; cursor: pointer; }
@@ -1057,24 +1059,43 @@ def render_analysis_html(
     const m = PD.overlay.open({{content:
       '<div class="filter-popover"><div class="filter-title">Filter: '+esc(def.name)+'</div>'
       + '<input type="text" class="filter-search" placeholder="Search options…">'
+      + '<label class="filter-option filter-selectall"><input type="checkbox" class="selectall-cb">'
+      + ' <strong>Select all</strong></label>'
       + '<div class="filter-options">'+opts+'</div>'
       + '<div class="filter-buttons"><button class="btn-clear">Clear</button>'
       + '<button class="btn-apply">Apply</button></div></div>'}});
     const pop = m.querySelector('.filter-popover');
     const search = pop.querySelector('.filter-search');
+    const optsBox = pop.querySelector('.filter-options');
+    const selectAll = pop.querySelector('.selectall-cb');
+    // visible (i.e. not hidden by search) option checkboxes
+    const visibleBoxes = () => [...optsBox.querySelectorAll('.filter-option')]
+      .filter(o => o.style.display !== 'none').map(o => o.querySelector('input'));
+    const syncSelectAll = () => {{
+      const vis = visibleBoxes();
+      const checked = vis.filter(cb => cb.checked).length;
+      selectAll.checked = vis.length > 0 && checked === vis.length;
+      selectAll.indeterminate = checked > 0 && checked < vis.length;
+    }};
     search.addEventListener('input', function() {{
       const q = this.value.toLowerCase();
-      pop.querySelectorAll('.filter-option').forEach(o => {{
+      optsBox.querySelectorAll('.filter-option').forEach(o => {{
         o.style.display = o.textContent.toLowerCase().includes(q) ? '' : 'none';
       }});
+      syncSelectAll();
+    }});
+    optsBox.addEventListener('change', syncSelectAll);
+    selectAll.addEventListener('change', function() {{
+      visibleBoxes().forEach(cb => {{ cb.checked = this.checked; }});
     }});
     search.focus();
+    syncSelectAll();
     pop.querySelector('.btn-clear').addEventListener('click', () => {{
       set.clear(); writeURL(); renderChips(); applyAll(); PD.overlay.close(m);
     }});
     pop.querySelector('.btn-apply').addEventListener('click', () => {{
       set.clear();
-      pop.querySelectorAll('input:checked').forEach(cb => set.add(cb.value));
+      optsBox.querySelectorAll('input:checked').forEach(cb => set.add(cb.value));
       writeURL(); renderChips(); applyAll(); PD.overlay.close(m);
     }});
   }}
