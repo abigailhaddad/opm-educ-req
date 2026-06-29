@@ -667,16 +667,17 @@ def render_analysis_html(
     .global-filters { background: var(--color-surface); border: 1px solid var(--color-border);
                       border-radius: var(--card-radius); padding: 1rem 1.25rem; margin-bottom: 1.5rem;
                       display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: flex-start; }
-    .gf-group { display: flex; flex-direction: column; gap: .35rem; min-width: 0; }
+    .gf-group { display: flex; flex-direction: column; gap: .3rem; min-width: 0; }
     .gf-group > .gf-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
                             letter-spacing: 0.03em; color: var(--color-text-muted); }
-    .gf-options { display: flex; flex-wrap: wrap; gap: .25rem .9rem; max-height: 9.5rem;
-                  overflow-y: auto; padding-right: .25rem; }
-    .gf-dept .gf-options { max-width: 520px; }
-    .gf-opt { display: flex; align-items: center; gap: .3rem; font-size: 0.8125rem;
-              white-space: nowrap; cursor: pointer; }
-    .gf-opt input { cursor: pointer; }
-    .gf-actions { display: flex; gap: .5rem; align-items: center; margin-left: auto; align-self: center; }
+    .gf-select { font-family: var(--font-body); font-size: 0.8125rem; color: var(--color-text);
+                 background: var(--color-bg); border: 1px solid var(--color-border);
+                 border-radius: 0.375rem; padding: 0.35rem 0.5rem; min-width: 170px; cursor: pointer; }
+    .gf-select[multiple] { min-height: 5.5rem; }
+    .gf-select.gf-dept-select { min-width: 280px; }
+    .gf-select:focus { outline: none; border-color: var(--color-highlight); }
+    .gf-hint { font-size: 0.68rem; color: var(--color-text-muted); }
+    .gf-actions { display: flex; gap: .5rem; align-items: center; margin-left: auto; align-self: flex-end; }
     .gf-btn { font-family: var(--font-body); font-size: 0.8rem; font-weight: 600;
               padding: 0.4rem 0.9rem; border-radius: 0.375rem; cursor: pointer;
               border: 1px solid var(--color-border); background: var(--color-bg);
@@ -901,38 +902,43 @@ def render_analysis_html(
     history.replaceState(null, '', qs ? location.pathname + '?' + qs : location.pathname);
   }}
 
-  // ---- Filter UI ----
+  // ---- Filter UI (multi-select dropdowns) ----
   function buildFilters() {{
     const gf = document.getElementById('globalFilters');
-    const group = (cls, label, items, set, fmt) => {{
-      let h = '<div class="gf-group '+cls+'"><span class="gf-label">'+label+'</span><div class="gf-options">';
+    const group = (id, extraCls, label, items, set, fmt) => {{
+      let h = '<div class="gf-group"><span class="gf-label">'+label+'</span>'
+            + '<select id="'+id+'" class="gf-select '+extraCls+'" multiple size="5">';
       items.forEach(it => {{
-        const ck = set.has(it) ? ' checked' : '';
-        h += '<label class="gf-opt"><input type="checkbox" value="'+esc(it)+'"'+ck+'>'
-           + esc(fmt?fmt(it):it) + '</label>';
+        const s = set.has(it) ? ' selected' : '';
+        h += '<option value="'+esc(it)+'"'+s+'>'+esc(fmt?fmt(it):it)+'</option>';
       }});
-      return h + '</div></div>';
+      return h + '</select><span class="gf-hint">'
+        + 'Ctrl/&#8984;-click for multiple</span></div>';
     }};
     gf.innerHTML =
-      group('gf-dept', 'Department', DEPTS, sel.dept) +
-      group('gf-year', 'Year', YEARS, sel.year) +
-      group('gf-cat',  'Category', CATS, sel.cat, c=>catLabels[c]||c) +
+      group('fDept', 'gf-dept-select', 'Department', DEPTS, sel.dept) +
+      group('fYear', '', 'Year', YEARS, sel.year) +
+      group('fCat',  '', 'Category', CATS, sel.cat, c=>catLabels[c]||c) +
       '<div class="gf-actions">'
       + '<button class="gf-btn" id="gfClear">Clear all</button>'
       + '<button class="gf-btn primary" id="gfCopy">Copy link</button>'
       + '<span class="gf-copied" id="gfCopied" style="display:none">Copied!</span></div>';
 
-    const wire = (selector, set) => gf.querySelectorAll(selector+' input').forEach(cb =>
-      cb.addEventListener('change', () => {{
-        if (cb.checked) set.add(cb.value); else set.delete(cb.value);
+    const wire = (id, set) => {{
+      const elem = document.getElementById(id);
+      elem.addEventListener('change', () => {{
+        set.clear();
+        [...elem.selectedOptions].forEach(o => set.add(o.value));
         writeURL(); applyAll();
-      }}));
-    wire('.gf-dept', sel.dept);
-    wire('.gf-year', sel.year);
-    wire('.gf-cat',  sel.cat);
+      }});
+    }};
+    wire('fDept', sel.dept);
+    wire('fYear', sel.year);
+    wire('fCat',  sel.cat);
     document.getElementById('gfClear').addEventListener('click', () => {{
       sel.dept.clear(); sel.year.clear(); sel.cat.clear();
-      gf.querySelectorAll('input[type=checkbox]').forEach(cb => cb.checked = false);
+      gf.querySelectorAll('select.gf-select').forEach(s =>
+        [...s.options].forEach(o => o.selected = false));
       writeURL(); applyAll();
     }});
     document.getElementById('gfCopy').addEventListener('click', () => {{
