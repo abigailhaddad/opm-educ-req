@@ -663,29 +663,58 @@ def render_analysis_html(
     .methodology dt { font-weight: 700; margin-top: .6em; }
     .methodology dd { margin-left: 1.2em; }
 
-    /* global filter bar */
-    .global-filters { background: var(--color-surface); border: 1px solid var(--color-border);
-                      border-radius: var(--card-radius); padding: 1rem 1.25rem; margin-bottom: 1.5rem;
-                      display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: flex-start; }
-    .gf-group { display: flex; flex-direction: column; gap: .3rem; min-width: 0; }
-    .gf-group > .gf-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
-                            letter-spacing: 0.03em; color: var(--color-text-muted); }
-    .gf-select { font-family: var(--font-body); font-size: 0.8125rem; color: var(--color-text);
-                 background: var(--color-bg); border: 1px solid var(--color-border);
-                 border-radius: 0.375rem; padding: 0.35rem 0.5rem; min-width: 170px; cursor: pointer; }
-    .gf-select[multiple] { min-height: 5.5rem; }
-    .gf-select.gf-dept-select { min-width: 280px; }
-    .gf-select:focus { outline: none; border-color: var(--color-highlight); }
-    .gf-hint { font-size: 0.68rem; color: var(--color-text-muted); }
-    .gf-actions { display: flex; gap: .5rem; align-items: center; margin-left: auto; align-self: flex-end; }
-    .gf-btn { font-family: var(--font-body); font-size: 0.8rem; font-weight: 600;
-              padding: 0.4rem 0.9rem; border-radius: 0.375rem; cursor: pointer;
-              border: 1px solid var(--color-border); background: var(--color-bg);
-              color: var(--color-text); transition: all 0.15s; }
-    .gf-btn:hover { border-color: var(--color-highlight); }
-    .gf-btn.primary { background: var(--color-accent); color: #fff; border-color: var(--color-accent); }
-    .gf-btn.primary:hover { background: var(--color-accent-hover); }
+    /* ── chip filter bar (PD.ChipBar pattern) ───────────────────────── */
+    .filters-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+                   min-height: 46px; margin: 0 0 1.5rem; padding: 0.6rem 0.85rem;
+                   background: var(--color-surface); border: 1px solid var(--color-border);
+                   border-radius: var(--card-radius); }
+    .filters-bar-empty { color: var(--color-text-muted); font-size: 0.82rem; }
+    .add-filter-btn { background: var(--color-accent); color: #fff; border: none;
+                      padding: 6px 14px; border-radius: 999px; font-family: var(--font-body);
+                      font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+    .add-filter-btn:hover { background: var(--color-accent-hover); transform: translateY(-1px); }
+    .filter-chip { display: inline-flex; align-items: center; gap: 7px; background: var(--color-bg);
+                   border: 1px solid var(--color-accent); border-radius: 999px;
+                   padding: 4px 6px 4px 12px; font-size: 0.8rem; color: var(--color-text); }
+    .filter-chip-label { font-weight: 700; }
+    .filter-chip-value { max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .filter-chip-remove { cursor: pointer; font-weight: 700; width: 18px; height: 18px;
+                          display: flex; align-items: center; justify-content: center;
+                          border-radius: 50%; color: var(--color-text-muted); }
+    .filter-chip-remove:hover { background: var(--color-accent); color: #fff; }
+    .copy-link-btn { margin-left: auto; background: var(--color-bg); color: var(--color-text);
+                     border: 1px solid var(--color-border); padding: 5px 13px; border-radius: 999px;
+                     font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; cursor: pointer; }
+    .copy-link-btn:hover { border-color: var(--color-highlight); }
     .gf-copied { font-size: 0.78rem; color: var(--color-accent); font-weight: 600; }
+
+    /* add-filter popover (PD.overlay backdrop = .filter-modal) */
+    .filter-modal { position: fixed; inset: 0; background: rgba(61,43,31,0.4);
+                    display: flex; align-items: center; justify-content: center; z-index: 10000;
+                    backdrop-filter: blur(2px); }
+    .filter-popover { background: var(--color-bg); border: 1px solid var(--color-border);
+                      border-radius: 14px; box-shadow: var(--shadow-md); padding: 18px;
+                      min-width: 300px; max-width: 460px; max-height: 80vh; overflow-y: auto; }
+    .filter-title { font-size: 0.98rem; font-weight: 700; color: var(--color-text);
+                    margin-bottom: 12px; padding-bottom: 10px; border-bottom: 2px solid var(--color-border);
+                    font-family: var(--font-heading); }
+    .filter-search { width: 100%; padding: 9px 11px; border: 1px solid var(--color-border);
+                     border-radius: 9px; font-size: 0.88rem; margin-bottom: 10px;
+                     font-family: var(--font-body); }
+    .filter-search:focus { outline: none; border-color: var(--color-accent); }
+    .filter-options { display: flex; flex-direction: column; gap: 2px; max-height: 320px; overflow-y: auto; }
+    .filter-option { display: flex; align-items: center; gap: 9px; padding: 7px 6px;
+                     border-radius: 7px; cursor: pointer; font-size: 0.9rem; }
+    .filter-option:hover { background: var(--color-surface); }
+    .filter-option input { width: 16px; height: 16px; accent-color: var(--color-accent); cursor: pointer; }
+    .filter-option .opt-count { color: var(--color-text-muted); font-size: 0.78rem; margin-left: auto; }
+    .filter-buttons { display: flex; gap: 9px; justify-content: flex-end; margin-top: 14px; }
+    .filter-buttons button { font-family: var(--font-body); font-size: 0.82rem; font-weight: 600;
+                             padding: 6px 14px; border-radius: 0.375rem; cursor: pointer; }
+    .btn-clear { background: var(--color-bg); color: var(--color-text); border: 1px solid var(--color-border); }
+    .btn-clear:hover { border-color: var(--color-highlight); }
+    .btn-apply { background: var(--color-accent); color: #fff; border: 1px solid var(--color-accent); }
+    .btn-apply:hover { background: var(--color-accent-hover); }
     """
 
     p = []
@@ -708,8 +737,15 @@ def render_analysis_html(
         f"<a href='https://presentofcoding.substack.com'>Blog</a>).</p>"
     )
 
-    # Global filter bar (populated by JS from embedded data + URL)
-    p.append("<div class='global-filters' id='globalFilters'></div>")
+    # Global chip filter bar (PD.ChipBar) — wired up by JS from embedded data + URL
+    p.append(
+        "<div class='filters-bar' id='filtersBar'>"
+        "<button class='add-filter-btn' id='addFilterBtn' type='button'>+ Add filter</button>"
+        "<span class='filters-bar-empty' id='filtersBarEmpty'>No filters applied</span>"
+        "<button class='copy-link-btn' id='gfCopy' type='button'>Copy link</button>"
+        "<span class='gf-copied' id='gfCopied' style='display:none'>Copied!</span>"
+        "</div>"
+    )
 
     # Stat cards
     p.append("<div class='stats-row' id='statsRow'>")
@@ -846,6 +882,65 @@ def render_analysis_html(
     p.append('<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>')
     p.append('<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>')
 
+    # PD.ChipBar + PD.overlay (vendored verbatim from the urgency-tracker shared lib)
+    p.append(r"""<script>
+/* PD.ChipBar — removable filter chips (vanilla DOM). */
+(function (root) {
+  var PD = root.PD = root.PD || {};
+  function _resolve(s) { if (!s) return null; return typeof s === 'string' ? document.querySelector(s) : s; }
+  function ChipBar(opts) {
+    opts = opts || {};
+    this._barEl = _resolve(opts.barEl);
+    this._emptyEl = _resolve(opts.emptyEl);
+    if (!this._barEl) throw new Error('PD.ChipBar: barEl is required');
+  }
+  ChipBar.prototype.render = function (chips) {
+    chips = chips || [];
+    this._barEl.querySelectorAll('.filter-chip.column-filter-chip').forEach(function (c) { c.remove(); });
+    if (this._emptyEl) this._emptyEl.style.display = chips.length ? 'none' : '';
+    var bar = this._barEl, anchor = this._emptyEl;
+    chips.forEach(function (chip) {
+      var el = document.createElement('div');
+      el.className = 'filter-chip column-filter-chip';
+      var labelSpan = document.createElement('span');
+      labelSpan.className = 'filter-chip-label'; labelSpan.textContent = chip.label;
+      var valueSpan = document.createElement('span');
+      valueSpan.className = 'filter-chip-value'; valueSpan.textContent = chip.value;
+      var removeSpan = document.createElement('span');
+      removeSpan.className = 'filter-chip-remove'; removeSpan.textContent = '×';
+      if (chip.onRemove) removeSpan.addEventListener('click', chip.onRemove);
+      el.appendChild(labelSpan); el.appendChild(valueSpan); el.appendChild(removeSpan);
+      if (anchor && anchor.parentNode === bar) bar.insertBefore(el, anchor.nextSibling);
+      else bar.appendChild(el);
+    });
+  };
+  ChipBar.prototype.clear = function () { this.render([]); };
+  PD.ChipBar = ChipBar;
+})(window);
+/* PD.overlay — minimal popover backdrop. */
+(function (root) {
+  var PD = root.PD = root.PD || {};
+  function open(opts) {
+    opts = opts || {};
+    var overlay = document.createElement('div');
+    overlay.className = 'filter-modal' + (opts.className ? ' ' + opts.className : '');
+    overlay.innerHTML = opts.content || '';
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) close(overlay); });
+    var escHandler = function (e) { if (e.key === 'Escape') { close(overlay); document.removeEventListener('keydown', escHandler); } };
+    overlay._pdEscHandler = escHandler;
+    document.addEventListener('keydown', escHandler);
+    document.body.appendChild(overlay);
+    return overlay;
+  }
+  function close(overlay) {
+    if (!overlay) return;
+    if (overlay._pdEscHandler) { document.removeEventListener('keydown', overlay._pdEscHandler); overlay._pdEscHandler = null; }
+    if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+  }
+  PD.overlay = { open: open, close: close };
+})(window);
+</script>""")
+
     p.append(f"""<script>
 (function() {{
   const catLabels = {cat_labels_js};
@@ -902,45 +997,91 @@ def render_analysis_html(
     history.replaceState(null, '', qs ? location.pathname + '?' + qs : location.pathname);
   }}
 
-  // ---- Filter UI (multi-select dropdowns) ----
-  function buildFilters() {{
-    const gf = document.getElementById('globalFilters');
-    const group = (id, extraCls, label, items, set, fmt) => {{
-      let h = '<div class="gf-group"><span class="gf-label">'+label+'</span>'
-            + '<select id="'+id+'" class="gf-select '+extraCls+'" multiple size="5">';
-      items.forEach(it => {{
-        const s = set.has(it) ? ' selected' : '';
-        h += '<option value="'+esc(it)+'"'+s+'>'+esc(fmt?fmt(it):it)+'</option>';
-      }});
-      return h + '</select><span class="gf-hint">'
-        + 'Ctrl/&#8984;-click for multiple</span></div>';
-    }};
-    gf.innerHTML =
-      group('fDept', 'gf-dept-select', 'Department', DEPTS, sel.dept) +
-      group('fYear', '', 'Year', YEARS, sel.year) +
-      group('fCat',  '', 'Category', CATS, sel.cat, c=>catLabels[c]||c) +
-      '<div class="gf-actions">'
-      + '<button class="gf-btn" id="gfClear">Clear all</button>'
-      + '<button class="gf-btn primary" id="gfCopy">Copy link</button>'
-      + '<span class="gf-copied" id="gfCopied" style="display:none">Copied!</span></div>';
+  // ---- Filter definitions + per-option counts ----
+  const FILTER_DEFS = [
+    {{ key:'dept', name:'Department', items:DEPTS,
+       label:d=>d, validate:v=>DEPTS.includes(v) }},
+    {{ key:'year', name:'Year', items:YEARS,
+       label:y=>y, validate:v=>YEARS.includes(v) }},
+    {{ key:'cat',  name:'Category', items:CATS,
+       label:c=>catLabels[c]||c, validate:v=>CATS.includes(v) }},
+  ];
+  const DEF_BY_KEY = {{}}; FILTER_DEFS.forEach(d => DEF_BY_KEY[d.key] = d);
 
-    const wire = (id, set) => {{
-      const elem = document.getElementById(id);
-      elem.addEventListener('change', () => {{
-        set.clear();
-        [...elem.selectedOptions].forEach(o => set.add(o.value));
-        writeURL(); applyAll();
+  // Total postings per option value (ignores current filters), for the popover counts.
+  const OPT_COUNTS = {{ dept:{{}}, year:{{}}, cat:{{}} }};
+  for (const [d,c,y,n] of DSY_PRIM) {{
+    OPT_COUNTS.dept[DEPTS[d]] = (OPT_COUNTS.dept[DEPTS[d]]||0) + n;
+    OPT_COUNTS.year[String(y)] = (OPT_COUNTS.year[String(y)]||0) + n;
+    OPT_COUNTS.cat[c] = (OPT_COUNTS.cat[c]||0) + n;
+  }}
+
+  let chipBar = null;
+
+  function renderChips() {{
+    const chips = [];
+    FILTER_DEFS.forEach(def => {{
+      const set = sel[def.key];
+      if (!set.size) return;
+      const vals = def.items.filter(v => set.has(v)).map(def.label);
+      chips.push({{
+        label: def.name + ':',
+        value: vals.join(', '),
+        onRemove: () => {{ set.clear(); writeURL(); renderChips(); applyAll(); }},
       }});
-    }};
-    wire('fDept', sel.dept);
-    wire('fYear', sel.year);
-    wire('fCat',  sel.cat);
-    document.getElementById('gfClear').addEventListener('click', () => {{
-      sel.dept.clear(); sel.year.clear(); sel.cat.clear();
-      gf.querySelectorAll('select.gf-select').forEach(s =>
-        [...s.options].forEach(o => o.selected = false));
-      writeURL(); applyAll();
     }});
+    chipBar.render(chips);
+  }}
+
+  // ---- Add-filter popover flow (PD.overlay) ----
+  function openFilterSelection() {{
+    const opts = FILTER_DEFS.map(d =>
+      '<label class="filter-option"><input type="checkbox" value="'+d.key+'"> '+esc(d.name)+'</label>'
+    ).join('');
+    const m = PD.overlay.open({{content:
+      '<div class="filter-popover" style="min-width:280px"><div class="filter-title">Add filter</div>'+opts+'</div>'}});
+    m.querySelectorAll('input[type=checkbox]').forEach(cb => cb.addEventListener('change', () => {{
+      PD.overlay.close(m);
+      openMultiselect(DEF_BY_KEY[cb.value]);
+    }}));
+  }}
+
+  function openMultiselect(def) {{
+    const set = sel[def.key];
+    const counts = OPT_COUNTS[def.key] || {{}};
+    const opts = def.items.map(v =>
+      '<label class="filter-option"><input type="checkbox" value="'+esc(v)+'"'
+      + (set.has(v) ? ' checked' : '') + '> <span>' + esc(def.label(v)) + '</span>'
+      + '<span class="opt-count">' + (counts[v]||0).toLocaleString() + '</span></label>'
+    ).join('');
+    const m = PD.overlay.open({{content:
+      '<div class="filter-popover"><div class="filter-title">Filter: '+esc(def.name)+'</div>'
+      + '<input type="text" class="filter-search" placeholder="Search options…">'
+      + '<div class="filter-options">'+opts+'</div>'
+      + '<div class="filter-buttons"><button class="btn-clear">Clear</button>'
+      + '<button class="btn-apply">Apply</button></div></div>'}});
+    const pop = m.querySelector('.filter-popover');
+    const search = pop.querySelector('.filter-search');
+    search.addEventListener('input', function() {{
+      const q = this.value.toLowerCase();
+      pop.querySelectorAll('.filter-option').forEach(o => {{
+        o.style.display = o.textContent.toLowerCase().includes(q) ? '' : 'none';
+      }});
+    }});
+    search.focus();
+    pop.querySelector('.btn-clear').addEventListener('click', () => {{
+      set.clear(); writeURL(); renderChips(); applyAll(); PD.overlay.close(m);
+    }});
+    pop.querySelector('.btn-apply').addEventListener('click', () => {{
+      set.clear();
+      pop.querySelectorAll('input:checked').forEach(cb => set.add(cb.value));
+      writeURL(); renderChips(); applyAll(); PD.overlay.close(m);
+    }});
+  }}
+
+  function buildFilters() {{
+    chipBar = new PD.ChipBar({{ barEl:'#filtersBar', emptyEl:'#filtersBarEmpty' }});
+    document.getElementById('addFilterBtn').addEventListener('click', openFilterSelection);
     document.getElementById('gfCopy').addEventListener('click', () => {{
       navigator.clipboard.writeText(location.href).then(() => {{
         const c = document.getElementById('gfCopied');
@@ -948,6 +1089,7 @@ def render_analysis_html(
         setTimeout(() => c.style.display = 'none', 1500);
       }});
     }});
+    renderChips();
   }}
 
   // ---- Filter predicates ----
