@@ -1,6 +1,6 @@
 # Federal Job Postings by Education Requirement
 
-**Live site: [opm-educ-req.netlify.app](https://opm-educ-req.netlify.app)**
+**Live site: [opm-educ-req.abigailhaddad.com](https://opm-educ-req.abigailhaddad.com)**
 
 What proportion of federal job postings require a college degree? This project answers that by classifying every OPM occupational series by its education requirement and joining that against ~2.9 million USAJOBS postings (2018-2026).
 
