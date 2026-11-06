@@ -616,6 +616,7 @@ def render_analysis_html(
     table.data-table tr:hover { background: var(--color-border); }
     table.data-table td:first-child { text-align: center; font-weight: 600;
                                        font-family: var(--font-heading); }
+    .table-scroll { overflow-x: auto; }
     .pct { color: var(--color-text-muted); font-size: 0.7rem; }
 
     /* DataTable overrides */
@@ -775,7 +776,7 @@ def render_analysis_html(
     p.append("<div class='card'>")
     p.append("<h2 style='margin-top:0'>Postings by Year and Education Category</h2>")
     p.append("<p style='font-size:0.85rem;color:var(--color-text-muted)'>Primary series classification. 2026 is partial.</p>")
-    p.append("<table class='data-table'><thead><tr><th>Year</th><th>Total</th>")
+    p.append("<div class='table-scroll'><table class='data-table'><thead><tr><th>Year</th><th>Total</th>")
     for cat in FOUR_CATS:
         p.append(f"<th><span class='cat-badge cat-{cat}'>{CAT_LABELS[cat]}</span></th>")
     p.append("</tr></thead><tbody id='byYearBody'>")
@@ -787,7 +788,7 @@ def render_analysis_html(
             pv = f"{n/t*100:.0f}" if t else "0"
             p.append(f"<td>{n:,} <span class='pct'>({pv}%)</span></td>")
         p.append("</tr>")
-    p.append("</tbody></table></div>")
+    p.append("</tbody></table></div></div>")
 
     # Methodology (inside tab 1)
     p.append("<div class='card methodology'>")
