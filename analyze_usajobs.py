@@ -532,7 +532,7 @@ def render_analysis_html(
         "mandatory_professional": "Degree required for licensure (doctors, nurses, architects...)",
         "mandatory_qualification": "OPM requires a degree (economists, scientists, engineers...)",
         "optional": "Education is one qualifying path; experience also works",
-        "none": "No published education requirement (excepted service, FWS trades)",
+        "none": "No published education requirement (mostly FWS trades and attorneys)",
     }
 
     total = payload["total_postings"]
@@ -813,8 +813,8 @@ def render_analysis_html(
     )
     p.append(
         "<dt><span class='cat-badge cat-none'>None</span></dt>"
-        "<dd>No published education requirement. Excepted service (attorneys, chaplains) "
-        "or Federal Wage System trades (cooks, mechanics, warehouse workers).</dd>"
+        "<dd>No published education requirement. Mostly Federal Wage System trades "
+        "(cooks, mechanics, warehouse workers) and attorneys.</dd>"
     )
     p.append("</dl>")
     p.append(
