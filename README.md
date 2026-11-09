@@ -56,7 +56,7 @@ The professional vs. qualification split within mandatory is defined in `mandato
 
 ## Deploy
 
-The site is `public/index.html`, served from Cloudflare Pages (project `opm-educ-req`). A push to `main` that changes `public/` deploys it through `.github/workflows/deploy.yml`, which needs the `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets. To deploy by hand: `wrangler pages deploy public --project-name opm-educ-req`.
+The site is `public/index.html`, served from Cloudflare Pages (project `opm-educ-req`). It is not connected to git: after changing `public/`, publish it by hand from a clean checkout of `main` with `wrangler pages deploy public --project-name opm-educ-req`.
 
 ## Requirements
 
