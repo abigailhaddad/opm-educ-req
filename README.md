@@ -54,6 +54,10 @@ Every GS series was reviewed individually. Some needed manual correction where t
 
 The professional vs. qualification split within mandatory is defined in `mandatory_subcategory.json` — the series where the degree is a prerequisite for professional licensure.
 
+## Deploy
+
+The site is `public/index.html`, served from Cloudflare Pages (project `opm-educ-req`). A push to `main` that changes `public/` deploys it through `.github/workflows/deploy.yml`, which needs the `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets. To deploy by hand: `wrangler pages deploy public --project-name opm-educ-req`.
+
 ## Requirements
 
 - Python 3.9+
